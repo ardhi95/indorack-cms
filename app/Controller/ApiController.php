@@ -8,6 +8,7 @@ class ApiController extends AppController
 
 	public function beforeFilter()
 	{
+		// Test Commit
 		/*//prepare for logging
 		CakeLog::config('apiLog', array(
 			'engine' => 'File'
