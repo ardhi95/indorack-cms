@@ -1,0 +1,1472 @@
+2017-08-23 15:08:03 Error: [Error] Call to a member function BindImageContent() on null
+Request URL: /ProductCategories/Edit/3/1/50
+Stack Trace:
+#0 [internal function]: ProductCategoriesController->Edit('3', '1', '50')
+#1 /home/u3967825/public_html/sites/indorack/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(ProductCategoriesController), Array)
+#2 /home/u3967825/public_html/sites/indorack/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /home/u3967825/public_html/sites/indorack/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ProductCategoriesController), Object(CakeRequest))
+#4 /home/u3967825/public_html/sites/indorack/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2017-08-23 15:08:07 Error: [Error] Call to a member function BindImageContent() on null
+Request URL: /ProductCategories/Edit/3/1/50?debug=1
+Stack Trace:
+#0 [internal function]: ProductCategoriesController->Edit('3', '1', '50')
+#1 /home/u3967825/public_html/sites/indorack/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(ProductCategoriesController), Array)
+#2 /home/u3967825/public_html/sites/indorack/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /home/u3967825/public_html/sites/indorack/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ProductCategoriesController), Object(CakeRequest))
+#4 /home/u3967825/public_html/sites/indorack/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2017-08-23 15:10:54 Error: [Error] Call to a member function BindImageContent() on null
+Request URL: /ProductCategories/Edit/3/1/50?debug=1
+Stack Trace:
+#0 [internal function]: ProductCategoriesController->Edit('3', '1', '50')
+#1 /home/u3967825/public_html/sites/indorack/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(ProductCategoriesController), Array)
+#2 /home/u3967825/public_html/sites/indorack/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /home/u3967825/public_html/sites/indorack/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ProductCategoriesController), Object(CakeRequest))
+#4 /home/u3967825/public_html/sites/indorack/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2017-08-23 15:10:56 Error: [Error] Call to a member function BindImageContent() on null
+Request URL: /ProductCategories/Edit/3/1/50?debug=1
+Stack Trace:
+#0 [internal function]: ProductCategoriesController->Edit('3', '1', '50')
+#1 /home/u3967825/public_html/sites/indorack/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(ProductCategoriesController), Array)
+#2 /home/u3967825/public_html/sites/indorack/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /home/u3967825/public_html/sites/indorack/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(ProductCategoriesController), Object(CakeRequest))
+#4 /home/u3967825/public_html/sites/indorack/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2017-08-23 17:09:38 Error: [MissingControllerException] Controller class Robots.txtController could not be found.
+Exception Attributes: array (
+  'class' => 'Robots.txtController',
+  'plugin' => NULL,
+)
+Request URL: /robots.txt
+Stack Trace:
+#0 /home/u3967825/public_html/sites/indorack/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-08-25 09:37:28 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[08004] [1040] Too many connections',
+  'enabled' => true,
+)
+Request URL: /Orders/ListItem/page:1/limit:50/fullScreenMode:0
+Stack Trace:
+#0 /home/u3967825/public_html/sites/indorack/lib/Cake/Model/Datasource/DboSource.php(269): Mysql->connect()
+#1 /home/u3967825/public_html/sites/indorack/lib/Cake/Model/ConnectionManager.php(105): DboSource->__construct(Array)
+#2 /home/u3967825/public_html/sites/indorack/lib/Cake/Model/Model.php(3640): ConnectionManager::getDataSource('default')
+#3 /home/u3967825/public_html/sites/indorack/lib/Cake/Model/Model.php(1162): Model->setDataSource('default')
+#4 /home/u3967825/public_html/sites/indorack/lib/Cake/Model/Model.php(3667): Model->setSource('users')
+#5 /home/u3967825/public_html/sites/indorack/lib/Cake/Model/Model.php(3038): Model->getDataSource()
+#6 /home/u3967825/public_html/sites/indorack/lib/Cake/Model/Model.php(3010): Model->_readDataSource('first', Array)
+#7 /home/u3967825/public_html/sites/indorack/app/Controller/AppController.php(121): Model->find('first', Array)
+#8 /home/u3967825/public_html/sites/indorack/app/Controller/AppController.php(90): AppController->CheckProfile()
+#9 /home/u3967825/public_html/sites/indorack/app/Controller/OrdersController.php(13): AppController->beforeFilter()
+#10 /home/u3967825/public_html/sites/indorack/lib/Cake/Event/CakeEventManager.php(243): OrdersController->beforeFilter(Object(CakeEvent))
+#11 /home/u3967825/public_html/sites/indorack/lib/Cake/Controller/Controller.php(677): CakeEventManager->dispatch(Object(CakeEvent))
+#12 /home/u3967825/public_html/sites/indorack/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#13 /home/u3967825/public_html/sites/indorack/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(OrdersController), Object(CakeRequest))
+#14 /home/u3967825/public_html/sites/indorack/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2017-08-25 10:01:11 Warning: Warning (2): preg_match(): Compilation failed: invalid range in character class at offset 7 in [/home/u3967825/public_html/sites/indorack/app/Vendor/class.upload.php, line 2902]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+preg_match - [internal], line ??
+upload::upload() - APP/Vendor/class.upload.php, line 2902
+GeneralComponent::ResizeImageContent() - APP/Controller/Component/GeneralComponent.php, line 62
+ProductsController::Edit() - APP/Controller/ProductsController.php, line 480
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 491
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 110
+
+2017-08-25 10:01:11 Warning: Warning (2): preg_match() [<a href='http://php.net/function.preg-match'>function.preg-match</a>]: Compilation failed: invalid range in character class at offset 7 in [/home/u3967825/public_html/sites/indorack/app/Vendor/class.upload.php, line 2942]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+preg_match - [internal], line ??
+upload::upload() - APP/Vendor/class.upload.php, line 2942
+GeneralComponent::ResizeImageContent() - APP/Controller/Component/GeneralComponent.php, line 62
+ProductsController::Edit() - APP/Controller/ProductsController.php, line 480
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 491
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 110
+
+2017-08-25 10:01:11 Warning: Warning (2): preg_match() [<a href='http://php.net/function.preg-match'>function.preg-match</a>]: Compilation failed: invalid range in character class at offset 7 in [/home/u3967825/public_html/sites/indorack/app/Vendor/class.upload.php, line 2969]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+preg_match - [internal], line ??
+upload::upload() - APP/Vendor/class.upload.php, line 2969
+GeneralComponent::ResizeImageContent() - APP/Controller/Component/GeneralComponent.php, line 62
+ProductsController::Edit() - APP/Controller/ProductsController.php, line 480
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 491
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 110
+
+2017-08-25 10:01:11 Warning: Warning (2): preg_match() [<a href='http://php.net/function.preg-match'>function.preg-match</a>]: Compilation failed: invalid range in character class at offset 7 in [/home/u3967825/public_html/sites/indorack/app/Vendor/class.upload.php, line 2996]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+preg_match - [internal], line ??
+upload::upload() - APP/Vendor/class.upload.php, line 2996
+GeneralComponent::ResizeImageContent() - APP/Controller/Component/GeneralComponent.php, line 62
+ProductsController::Edit() - APP/Controller/ProductsController.php, line 480
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 491
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 110
+
+2017-08-25 10:01:11 Warning: Warning (2): preg_match() [<a href='http://php.net/function.preg-match'>function.preg-match</a>]: Compilation failed: invalid range in character class at offset 7 in [/home/u3967825/public_html/sites/indorack/app/Vendor/class.upload.php, line 3014]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+preg_match - [internal], line ??
+upload::upload() - APP/Vendor/class.upload.php, line 3014
+GeneralComponent::ResizeImageContent() - APP/Controller/Component/GeneralComponent.php, line 62
+ProductsController::Edit() - APP/Controller/ProductsController.php, line 480
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 491
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 110
+
+2017-08-25 10:01:12 Warning: Warning (2): preg_match() [<a href='http://php.net/function.preg-match'>function.preg-match</a>]: Compilation failed: invalid range in character class at offset 7 in [/home/u3967825/public_html/sites/indorack/app/Vendor/class.upload.php, line 2902]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+preg_match - [internal], line ??
+upload::upload() - APP/Vendor/class.upload.php, line 2902
+GeneralComponent::ResizeImageContent() - APP/Controller/Component/GeneralComponent.php, line 62
+ProductsController::Edit() - APP/Controller/ProductsController.php, line 492
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 491
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 110
+
+2017-08-25 10:01:12 Warning: Warning (2): preg_match() [<a href='http://php.net/function.preg-match'>function.preg-match</a>]: Compilation failed: invalid range in character class at offset 7 in [/home/u3967825/public_html/sites/indorack/app/Vendor/class.upload.php, line 2942]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+preg_match - [internal], line ??
+upload::upload() - APP/Vendor/class.upload.php, line 2942
+GeneralComponent::ResizeImageContent() - APP/Controller/Component/GeneralComponent.php, line 62
+ProductsController::Edit() - APP/Controller/ProductsController.php, line 492
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 491
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 110
+
+2017-08-25 10:01:12 Warning: Warning (2): preg_match() [<a href='http://php.net/function.preg-match'>function.preg-match</a>]: Compilation failed: invalid range in character class at offset 7 in [/home/u3967825/public_html/sites/indorack/app/Vendor/class.upload.php, line 2969]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+preg_match - [internal], line ??
+upload::upload() - APP/Vendor/class.upload.php, line 2969
+GeneralComponent::ResizeImageContent() - APP/Controller/Component/GeneralComponent.php, line 62
+ProductsController::Edit() - APP/Controller/ProductsController.php, line 492
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 491
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 110
+
+2017-08-25 10:01:12 Warning: Warning (2): preg_match() [<a href='http://php.net/function.preg-match'>function.preg-match</a>]: Compilation failed: invalid range in character class at offset 7 in [/home/u3967825/public_html/sites/indorack/app/Vendor/class.upload.php, line 2996]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+preg_match - [internal], line ??
+upload::upload() - APP/Vendor/class.upload.php, line 2996
+GeneralComponent::ResizeImageContent() - APP/Controller/Component/GeneralComponent.php, line 62
+ProductsController::Edit() - APP/Controller/ProductsController.php, line 492
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 491
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 110
+
+2017-08-25 10:01:12 Warning: Warning (2): preg_match() [<a href='http://php.net/function.preg-match'>function.preg-match</a>]: Compilation failed: invalid range in character class at offset 7 in [/home/u3967825/public_html/sites/indorack/app/Vendor/class.upload.php, line 3014]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+preg_match - [internal], line ??
+upload::upload() - APP/Vendor/class.upload.php, line 3014
+GeneralComponent::ResizeImageContent() - APP/Controller/Component/GeneralComponent.php, line 62
+ProductsController::Edit() - APP/Controller/ProductsController.php, line 492
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 491
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 110
+
+2017-08-25 10:06:01 Warning: Warning (2): preg_match(): Compilation failed: invalid range in character class at offset 7 in [/home/u3967825/public_html/sites/indorack/app/Vendor/class.upload.php, line 2902]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+preg_match - [internal], line ??
+upload::upload() - APP/Vendor/class.upload.php, line 2902
+GeneralComponent::ResizeImageContent() - APP/Controller/Component/GeneralComponent.php, line 62
+ProductsController::Edit() - APP/Controller/ProductsController.php, line 480
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 491
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 110
+
+2017-08-25 10:06:01 Warning: Warning (2): preg_match() [<a href='http://php.net/function.preg-match'>function.preg-match</a>]: Compilation failed: invalid range in character class at offset 7 in [/home/u3967825/public_html/sites/indorack/app/Vendor/class.upload.php, line 2942]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+preg_match - [internal], line ??
+upload::upload() - APP/Vendor/class.upload.php, line 2942
+GeneralComponent::ResizeImageContent() - APP/Controller/Component/GeneralComponent.php, line 62
+ProductsController::Edit() - APP/Controller/ProductsController.php, line 480
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 491
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 110
+
+2017-08-25 10:06:01 Warning: Warning (2): preg_match() [<a href='http://php.net/function.preg-match'>function.preg-match</a>]: Compilation failed: invalid range in character class at offset 7 in [/home/u3967825/public_html/sites/indorack/app/Vendor/class.upload.php, line 2969]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+preg_match - [internal], line ??
+upload::upload() - APP/Vendor/class.upload.php, line 2969
+GeneralComponent::ResizeImageContent() - APP/Controller/Component/GeneralComponent.php, line 62
+ProductsController::Edit() - APP/Controller/ProductsController.php, line 480
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 491
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 110
+
+2017-08-25 10:06:01 Warning: Warning (2): preg_match() [<a href='http://php.net/function.preg-match'>function.preg-match</a>]: Compilation failed: invalid range in character class at offset 7 in [/home/u3967825/public_html/sites/indorack/app/Vendor/class.upload.php, line 2996]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+preg_match - [internal], line ??
+upload::upload() - APP/Vendor/class.upload.php, line 2996
+GeneralComponent::ResizeImageContent() - APP/Controller/Component/GeneralComponent.php, line 62
+ProductsController::Edit() - APP/Controller/ProductsController.php, line 480
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 491
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 110
+
+2017-08-25 10:06:01 Warning: Warning (2): preg_match() [<a href='http://php.net/function.preg-match'>function.preg-match</a>]: Compilation failed: invalid range in character class at offset 7 in [/home/u3967825/public_html/sites/indorack/app/Vendor/class.upload.php, line 3014]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+preg_match - [internal], line ??
+upload::upload() - APP/Vendor/class.upload.php, line 3014
+GeneralComponent::ResizeImageContent() - APP/Controller/Component/GeneralComponent.php, line 62
+ProductsController::Edit() - APP/Controller/ProductsController.php, line 480
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 491
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 110
+
+2017-08-25 10:06:01 Warning: Warning (2): preg_match() [<a href='http://php.net/function.preg-match'>function.preg-match</a>]: Compilation failed: invalid range in character class at offset 7 in [/home/u3967825/public_html/sites/indorack/app/Vendor/class.upload.php, line 2902]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+preg_match - [internal], line ??
+upload::upload() - APP/Vendor/class.upload.php, line 2902
+GeneralComponent::ResizeImageContent() - APP/Controller/Component/GeneralComponent.php, line 62
+ProductsController::Edit() - APP/Controller/ProductsController.php, line 492
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 491
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 110
+
+2017-08-25 10:06:01 Warning: Warning (2): preg_match() [<a href='http://php.net/function.preg-match'>function.preg-match</a>]: Compilation failed: invalid range in character class at offset 7 in [/home/u3967825/public_html/sites/indorack/app/Vendor/class.upload.php, line 2942]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+preg_match - [internal], line ??
+upload::upload() - APP/Vendor/class.upload.php, line 2942
+GeneralComponent::ResizeImageContent() - APP/Controller/Component/GeneralComponent.php, line 62
+ProductsController::Edit() - APP/Controller/ProductsController.php, line 492
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 491
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 110
+
+2017-08-25 10:06:01 Warning: Warning (2): preg_match() [<a href='http://php.net/function.preg-match'>function.preg-match</a>]: Compilation failed: invalid range in character class at offset 7 in [/home/u3967825/public_html/sites/indorack/app/Vendor/class.upload.php, line 2969]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+preg_match - [internal], line ??
+upload::upload() - APP/Vendor/class.upload.php, line 2969
+GeneralComponent::ResizeImageContent() - APP/Controller/Component/GeneralComponent.php, line 62
+ProductsController::Edit() - APP/Controller/ProductsController.php, line 492
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 491
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 110
+
+2017-08-25 10:06:01 Warning: Warning (2): preg_match() [<a href='http://php.net/function.preg-match'>function.preg-match</a>]: Compilation failed: invalid range in character class at offset 7 in [/home/u3967825/public_html/sites/indorack/app/Vendor/class.upload.php, line 2996]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+preg_match - [internal], line ??
+upload::upload() - APP/Vendor/class.upload.php, line 2996
+GeneralComponent::ResizeImageContent() - APP/Controller/Component/GeneralComponent.php, line 62
+ProductsController::Edit() - APP/Controller/ProductsController.php, line 492
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 491
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 110
+
+2017-08-25 10:06:01 Warning: Warning (2): preg_match() [<a href='http://php.net/function.preg-match'>function.preg-match</a>]: Compilation failed: invalid range in character class at offset 7 in [/home/u3967825/public_html/sites/indorack/app/Vendor/class.upload.php, line 3014]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+preg_match - [internal], line ??
+upload::upload() - APP/Vendor/class.upload.php, line 3014
+GeneralComponent::ResizeImageContent() - APP/Controller/Component/GeneralComponent.php, line 62
+ProductsController::Edit() - APP/Controller/ProductsController.php, line 492
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 491
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 110
+
+2017-08-25 10:08:09 Warning: Warning (2): preg_match(): Compilation failed: invalid range in character class at offset 7 in [/home/u3967825/public_html/sites/indorack/app/Vendor/class.upload.php, line 2902]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+preg_match - [internal], line ??
+upload::upload() - APP/Vendor/class.upload.php, line 2902
+GeneralComponent::ResizeImageContent() - APP/Controller/Component/GeneralComponent.php, line 62
+ProductsController::Edit() - APP/Controller/ProductsController.php, line 480
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 491
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 110
+
+2017-08-25 10:08:09 Warning: Warning (2): preg_match() [<a href='http://php.net/function.preg-match'>function.preg-match</a>]: Compilation failed: invalid range in character class at offset 7 in [/home/u3967825/public_html/sites/indorack/app/Vendor/class.upload.php, line 2942]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+preg_match - [internal], line ??
+upload::upload() - APP/Vendor/class.upload.php, line 2942
+GeneralComponent::ResizeImageContent() - APP/Controller/Component/GeneralComponent.php, line 62
+ProductsController::Edit() - APP/Controller/ProductsController.php, line 480
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 491
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 110
+
+2017-08-25 10:08:09 Warning: Warning (2): preg_match() [<a href='http://php.net/function.preg-match'>function.preg-match</a>]: Compilation failed: invalid range in character class at offset 7 in [/home/u3967825/public_html/sites/indorack/app/Vendor/class.upload.php, line 2969]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+preg_match - [internal], line ??
+upload::upload() - APP/Vendor/class.upload.php, line 2969
+GeneralComponent::ResizeImageContent() - APP/Controller/Component/GeneralComponent.php, line 62
+ProductsController::Edit() - APP/Controller/ProductsController.php, line 480
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 491
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 110
+
+2017-08-25 10:08:09 Warning: Warning (2): preg_match() [<a href='http://php.net/function.preg-match'>function.preg-match</a>]: Compilation failed: invalid range in character class at offset 7 in [/home/u3967825/public_html/sites/indorack/app/Vendor/class.upload.php, line 2996]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+preg_match - [internal], line ??
+upload::upload() - APP/Vendor/class.upload.php, line 2996
+GeneralComponent::ResizeImageContent() - APP/Controller/Component/GeneralComponent.php, line 62
+ProductsController::Edit() - APP/Controller/ProductsController.php, line 480
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 491
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 110
+
+2017-08-25 10:08:09 Warning: Warning (2): preg_match() [<a href='http://php.net/function.preg-match'>function.preg-match</a>]: Compilation failed: invalid range in character class at offset 7 in [/home/u3967825/public_html/sites/indorack/app/Vendor/class.upload.php, line 3014]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+preg_match - [internal], line ??
+upload::upload() - APP/Vendor/class.upload.php, line 3014
+GeneralComponent::ResizeImageContent() - APP/Controller/Component/GeneralComponent.php, line 62
+ProductsController::Edit() - APP/Controller/ProductsController.php, line 480
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 491
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 110
+
+2017-08-25 10:08:10 Warning: Warning (2): preg_match() [<a href='http://php.net/function.preg-match'>function.preg-match</a>]: Compilation failed: invalid range in character class at offset 7 in [/home/u3967825/public_html/sites/indorack/app/Vendor/class.upload.php, line 2902]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+preg_match - [internal], line ??
+upload::upload() - APP/Vendor/class.upload.php, line 2902
+GeneralComponent::ResizeImageContent() - APP/Controller/Component/GeneralComponent.php, line 62
+ProductsController::Edit() - APP/Controller/ProductsController.php, line 492
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 491
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 110
+
+2017-08-25 10:08:10 Warning: Warning (2): preg_match() [<a href='http://php.net/function.preg-match'>function.preg-match</a>]: Compilation failed: invalid range in character class at offset 7 in [/home/u3967825/public_html/sites/indorack/app/Vendor/class.upload.php, line 2942]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+preg_match - [internal], line ??
+upload::upload() - APP/Vendor/class.upload.php, line 2942
+GeneralComponent::ResizeImageContent() - APP/Controller/Component/GeneralComponent.php, line 62
+ProductsController::Edit() - APP/Controller/ProductsController.php, line 492
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 491
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 110
+
+2017-08-25 10:08:10 Warning: Warning (2): preg_match() [<a href='http://php.net/function.preg-match'>function.preg-match</a>]: Compilation failed: invalid range in character class at offset 7 in [/home/u3967825/public_html/sites/indorack/app/Vendor/class.upload.php, line 2969]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+preg_match - [internal], line ??
+upload::upload() - APP/Vendor/class.upload.php, line 2969
+GeneralComponent::ResizeImageContent() - APP/Controller/Component/GeneralComponent.php, line 62
+ProductsController::Edit() - APP/Controller/ProductsController.php, line 492
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 491
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 110
+
+2017-08-25 10:08:10 Warning: Warning (2): preg_match() [<a href='http://php.net/function.preg-match'>function.preg-match</a>]: Compilation failed: invalid range in character class at offset 7 in [/home/u3967825/public_html/sites/indorack/app/Vendor/class.upload.php, line 2996]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+preg_match - [internal], line ??
+upload::upload() - APP/Vendor/class.upload.php, line 2996
+GeneralComponent::ResizeImageContent() - APP/Controller/Component/GeneralComponent.php, line 62
+ProductsController::Edit() - APP/Controller/ProductsController.php, line 492
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 491
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 110
+
+2017-08-25 10:08:10 Warning: Warning (2): preg_match() [<a href='http://php.net/function.preg-match'>function.preg-match</a>]: Compilation failed: invalid range in character class at offset 7 in [/home/u3967825/public_html/sites/indorack/app/Vendor/class.upload.php, line 3014]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+preg_match - [internal], line ??
+upload::upload() - APP/Vendor/class.upload.php, line 3014
+GeneralComponent::ResizeImageContent() - APP/Controller/Component/GeneralComponent.php, line 62
+ProductsController::Edit() - APP/Controller/ProductsController.php, line 492
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 491
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 110
+
+2017-08-25 10:08:59 Warning: Warning (2): preg_match(): Compilation failed: invalid range in character class at offset 7 in [/home/u3967825/public_html/sites/indorack/app/Vendor/class.upload.php, line 2902]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+preg_match - [internal], line ??
+upload::upload() - APP/Vendor/class.upload.php, line 2902
+GeneralComponent::ResizeImageContent() - APP/Controller/Component/GeneralComponent.php, line 62
+ProductsController::Edit() - APP/Controller/ProductsController.php, line 480
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 491
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 110
+
+2017-08-25 10:08:59 Warning: Warning (2): preg_match() [<a href='http://php.net/function.preg-match'>function.preg-match</a>]: Compilation failed: invalid range in character class at offset 7 in [/home/u3967825/public_html/sites/indorack/app/Vendor/class.upload.php, line 2942]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+preg_match - [internal], line ??
+upload::upload() - APP/Vendor/class.upload.php, line 2942
+GeneralComponent::ResizeImageContent() - APP/Controller/Component/GeneralComponent.php, line 62
+ProductsController::Edit() - APP/Controller/ProductsController.php, line 480
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 491
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 110
+
+2017-08-25 10:08:59 Warning: Warning (2): preg_match() [<a href='http://php.net/function.preg-match'>function.preg-match</a>]: Compilation failed: invalid range in character class at offset 7 in [/home/u3967825/public_html/sites/indorack/app/Vendor/class.upload.php, line 2969]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+preg_match - [internal], line ??
+upload::upload() - APP/Vendor/class.upload.php, line 2969
+GeneralComponent::ResizeImageContent() - APP/Controller/Component/GeneralComponent.php, line 62
+ProductsController::Edit() - APP/Controller/ProductsController.php, line 480
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 491
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 110
+
+2017-08-25 10:08:59 Warning: Warning (2): preg_match() [<a href='http://php.net/function.preg-match'>function.preg-match</a>]: Compilation failed: invalid range in character class at offset 7 in [/home/u3967825/public_html/sites/indorack/app/Vendor/class.upload.php, line 2996]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+preg_match - [internal], line ??
+upload::upload() - APP/Vendor/class.upload.php, line 2996
+GeneralComponent::ResizeImageContent() - APP/Controller/Component/GeneralComponent.php, line 62
+ProductsController::Edit() - APP/Controller/ProductsController.php, line 480
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 491
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 110
+
+2017-08-25 10:08:59 Warning: Warning (2): preg_match() [<a href='http://php.net/function.preg-match'>function.preg-match</a>]: Compilation failed: invalid range in character class at offset 7 in [/home/u3967825/public_html/sites/indorack/app/Vendor/class.upload.php, line 3014]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+preg_match - [internal], line ??
+upload::upload() - APP/Vendor/class.upload.php, line 3014
+GeneralComponent::ResizeImageContent() - APP/Controller/Component/GeneralComponent.php, line 62
+ProductsController::Edit() - APP/Controller/ProductsController.php, line 480
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 491
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 110
+
+2017-08-25 10:08:59 Warning: Warning (2): preg_match() [<a href='http://php.net/function.preg-match'>function.preg-match</a>]: Compilation failed: invalid range in character class at offset 7 in [/home/u3967825/public_html/sites/indorack/app/Vendor/class.upload.php, line 2902]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+preg_match - [internal], line ??
+upload::upload() - APP/Vendor/class.upload.php, line 2902
+GeneralComponent::ResizeImageContent() - APP/Controller/Component/GeneralComponent.php, line 62
+ProductsController::Edit() - APP/Controller/ProductsController.php, line 492
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 491
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 110
+
+2017-08-25 10:08:59 Warning: Warning (2): preg_match() [<a href='http://php.net/function.preg-match'>function.preg-match</a>]: Compilation failed: invalid range in character class at offset 7 in [/home/u3967825/public_html/sites/indorack/app/Vendor/class.upload.php, line 2942]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+preg_match - [internal], line ??
+upload::upload() - APP/Vendor/class.upload.php, line 2942
+GeneralComponent::ResizeImageContent() - APP/Controller/Component/GeneralComponent.php, line 62
+ProductsController::Edit() - APP/Controller/ProductsController.php, line 492
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 491
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 110
+
+2017-08-25 10:08:59 Warning: Warning (2): preg_match() [<a href='http://php.net/function.preg-match'>function.preg-match</a>]: Compilation failed: invalid range in character class at offset 7 in [/home/u3967825/public_html/sites/indorack/app/Vendor/class.upload.php, line 2969]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+preg_match - [internal], line ??
+upload::upload() - APP/Vendor/class.upload.php, line 2969
+GeneralComponent::ResizeImageContent() - APP/Controller/Component/GeneralComponent.php, line 62
+ProductsController::Edit() - APP/Controller/ProductsController.php, line 492
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 491
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 110
+
+2017-08-25 10:08:59 Warning: Warning (2): preg_match() [<a href='http://php.net/function.preg-match'>function.preg-match</a>]: Compilation failed: invalid range in character class at offset 7 in [/home/u3967825/public_html/sites/indorack/app/Vendor/class.upload.php, line 2996]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+preg_match - [internal], line ??
+upload::upload() - APP/Vendor/class.upload.php, line 2996
+GeneralComponent::ResizeImageContent() - APP/Controller/Component/GeneralComponent.php, line 62
+ProductsController::Edit() - APP/Controller/ProductsController.php, line 492
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 491
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 110
+
+2017-08-25 10:08:59 Warning: Warning (2): preg_match() [<a href='http://php.net/function.preg-match'>function.preg-match</a>]: Compilation failed: invalid range in character class at offset 7 in [/home/u3967825/public_html/sites/indorack/app/Vendor/class.upload.php, line 3014]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+preg_match - [internal], line ??
+upload::upload() - APP/Vendor/class.upload.php, line 3014
+GeneralComponent::ResizeImageContent() - APP/Controller/Component/GeneralComponent.php, line 62
+ProductsController::Edit() - APP/Controller/ProductsController.php, line 492
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 491
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 110
+
+2017-08-25 10:16:54 Warning: Warning (2): preg_match() [<a href='http://php.net/function.preg-match'>function.preg-match</a>]: Compilation failed: invalid range in character class at offset 7 in [/home/u3967825/public_html/sites/indorack/app/Vendor/class.upload.php, line 2902]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+preg_match - [internal], line ??
+upload::upload() - APP/Vendor/class.upload.php, line 2902
+GeneralComponent::ResizeImageContent() - APP/Controller/Component/GeneralComponent.php, line 62
+ApiController::PickupFinish() - APP/Controller/ApiController.php, line 2360
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 491
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 110
+
+2017-08-25 10:16:54 Warning: Warning (2): preg_match() [<a href='http://php.net/function.preg-match'>function.preg-match</a>]: Compilation failed: invalid range in character class at offset 7 in [/home/u3967825/public_html/sites/indorack/app/Vendor/class.upload.php, line 2942]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+preg_match - [internal], line ??
+upload::upload() - APP/Vendor/class.upload.php, line 2942
+GeneralComponent::ResizeImageContent() - APP/Controller/Component/GeneralComponent.php, line 62
+ApiController::PickupFinish() - APP/Controller/ApiController.php, line 2360
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 491
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 110
+
+2017-08-25 10:16:54 Warning: Warning (2): preg_match() [<a href='http://php.net/function.preg-match'>function.preg-match</a>]: Compilation failed: invalid range in character class at offset 7 in [/home/u3967825/public_html/sites/indorack/app/Vendor/class.upload.php, line 2969]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+preg_match - [internal], line ??
+upload::upload() - APP/Vendor/class.upload.php, line 2969
+GeneralComponent::ResizeImageContent() - APP/Controller/Component/GeneralComponent.php, line 62
+ApiController::PickupFinish() - APP/Controller/ApiController.php, line 2360
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 491
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 110
+
+2017-08-25 10:16:54 Warning: Warning (2): preg_match() [<a href='http://php.net/function.preg-match'>function.preg-match</a>]: Compilation failed: invalid range in character class at offset 7 in [/home/u3967825/public_html/sites/indorack/app/Vendor/class.upload.php, line 2996]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+preg_match - [internal], line ??
+upload::upload() - APP/Vendor/class.upload.php, line 2996
+GeneralComponent::ResizeImageContent() - APP/Controller/Component/GeneralComponent.php, line 62
+ApiController::PickupFinish() - APP/Controller/ApiController.php, line 2360
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 491
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 110
+
+2017-08-25 10:16:54 Warning: Warning (2): preg_match() [<a href='http://php.net/function.preg-match'>function.preg-match</a>]: Compilation failed: invalid range in character class at offset 7 in [/home/u3967825/public_html/sites/indorack/app/Vendor/class.upload.php, line 3014]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+preg_match - [internal], line ??
+upload::upload() - APP/Vendor/class.upload.php, line 3014
+GeneralComponent::ResizeImageContent() - APP/Controller/Component/GeneralComponent.php, line 62
+ApiController::PickupFinish() - APP/Controller/ApiController.php, line 2360
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 491
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 110
+
+2017-08-29 15:31:07 Error: [MissingTableException] Table vehicles for model Vehicle was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'vehicles',
+  'class' => 'Vehicle',
+  'ds' => 'default',
+)
+Request URL: /Vehicles/ListItem/page:1/limit:50/fullScreenMode:0
+Stack Trace:
+#0 /home/u3967825/public_html/sites/indorack/lib/Cake/Model/Model.php(3667): Model->setSource('vehicles')
+#1 /home/u3967825/public_html/sites/indorack/lib/Cake/Model/Model.php(1394): Model->getDataSource()
+#2 /home/u3967825/public_html/sites/indorack/lib/Cake/Model/Model.php(1490): Model->schema()
+#3 /home/u3967825/public_html/sites/indorack/lib/Cake/Controller/Component/PaginatorComponent.php(400): Model->hasField('id')
+#4 /home/u3967825/public_html/sites/indorack/lib/Cake/Controller/Component/PaginatorComponent.php(142): PaginatorComponent->validateSort(Object(Vehicle), Array, Array)
+#5 /home/u3967825/public_html/sites/indorack/lib/Cake/Controller/Controller.php(1089): PaginatorComponent->paginate(Object(Vehicle), Array, Array)
+#6 /home/u3967825/public_html/sites/indorack/app/Controller/VehiclesController.php(167): Controller->paginate('Vehicle', Array)
+#7 [internal function]: VehiclesController->ListItem()
+#8 /home/u3967825/public_html/sites/indorack/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(VehiclesController), Array)
+#9 /home/u3967825/public_html/sites/indorack/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /home/u3967825/public_html/sites/indorack/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(VehiclesController), Object(CakeRequest))
+#11 /home/u3967825/public_html/sites/indorack/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2017-08-30 11:01:47 Warning: Warning (2): unlink(/home/u3967825/public_html/sites/indorack/app/webroot/contents/Task/82/): No such file or directory in [/home/u3967825/public_html/sites/indorack/app/Controller/Component/GeneralComponent.php, line 283]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+unlink - [internal], line ??
+GeneralComponent::RmDir() - APP/Controller/Component/GeneralComponent.php, line 283
+GeneralComponent::DeleteContent() - APP/Controller/Component/GeneralComponent.php, line 215
+Task::afterDelete() - APP/Model/Task.php, line 9
+CakeEventManager::dispatch() - CORE/Cake/Event/CakeEventManager.php, line 243
+Model::delete() - CORE/Cake/Model/Model.php, line 2729
+Model::deleteAll() - CORE/Cake/Model/Model.php, line 2856
+Order::afterDelete() - APP/Model/Order.php, line 452
+CakeEventManager::dispatch() - CORE/Cake/Event/CakeEventManager.php, line 243
+Model::delete() - CORE/Cake/Model/Model.php, line 2729
+Model::deleteAll() - CORE/Cake/Model/Model.php, line 2856
+OrdersController::DeleteMultiple() - APP/Controller/OrdersController.php, line 837
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 491
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 110
+
+2017-09-11 14:06:19 Warning: Warning (2): preg_match() [<a href='http://php.net/function.preg-match'>function.preg-match</a>]: Compilation failed: invalid range in character class at offset 7 in [/home/u3967825/public_html/sites/indorack/app/Vendor/class.upload.php, line 2902]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+preg_match - [internal], line ??
+upload::upload() - APP/Vendor/class.upload.php, line 2902
+GeneralComponent::ResizeImageContent() - APP/Controller/Component/GeneralComponent.php, line 62
+ApiController::PickupFinish() - APP/Controller/ApiController.php, line 2373
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 491
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 110
+
+2017-09-11 14:06:20 Warning: Warning (2): preg_match() [<a href='http://php.net/function.preg-match'>function.preg-match</a>]: Compilation failed: invalid range in character class at offset 7 in [/home/u3967825/public_html/sites/indorack/app/Vendor/class.upload.php, line 2942]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+preg_match - [internal], line ??
+upload::upload() - APP/Vendor/class.upload.php, line 2942
+GeneralComponent::ResizeImageContent() - APP/Controller/Component/GeneralComponent.php, line 62
+ApiController::PickupFinish() - APP/Controller/ApiController.php, line 2373
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 491
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 110
+
+2017-09-11 14:06:20 Warning: Warning (2): preg_match() [<a href='http://php.net/function.preg-match'>function.preg-match</a>]: Compilation failed: invalid range in character class at offset 7 in [/home/u3967825/public_html/sites/indorack/app/Vendor/class.upload.php, line 2969]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+preg_match - [internal], line ??
+upload::upload() - APP/Vendor/class.upload.php, line 2969
+GeneralComponent::ResizeImageContent() - APP/Controller/Component/GeneralComponent.php, line 62
+ApiController::PickupFinish() - APP/Controller/ApiController.php, line 2373
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 491
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 110
+
+2017-09-11 14:06:20 Warning: Warning (2): preg_match() [<a href='http://php.net/function.preg-match'>function.preg-match</a>]: Compilation failed: invalid range in character class at offset 7 in [/home/u3967825/public_html/sites/indorack/app/Vendor/class.upload.php, line 2996]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+preg_match - [internal], line ??
+upload::upload() - APP/Vendor/class.upload.php, line 2996
+GeneralComponent::ResizeImageContent() - APP/Controller/Component/GeneralComponent.php, line 62
+ApiController::PickupFinish() - APP/Controller/ApiController.php, line 2373
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 491
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 110
+
+2017-09-11 14:06:20 Warning: Warning (2): preg_match() [<a href='http://php.net/function.preg-match'>function.preg-match</a>]: Compilation failed: invalid range in character class at offset 7 in [/home/u3967825/public_html/sites/indorack/app/Vendor/class.upload.php, line 3014]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+preg_match - [internal], line ??
+upload::upload() - APP/Vendor/class.upload.php, line 3014
+GeneralComponent::ResizeImageContent() - APP/Controller/Component/GeneralComponent.php, line 62
+ApiController::PickupFinish() - APP/Controller/ApiController.php, line 2373
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 491
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 110
+
+2017-09-11 14:08:13 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[08004] [1040] Too many connections',
+  'enabled' => true,
+)
+Request URL: /Orders/
+Stack Trace:
+#0 /home/u3967825/public_html/sites/indorack/lib/Cake/Model/Datasource/DboSource.php(269): Mysql->connect()
+#1 /home/u3967825/public_html/sites/indorack/lib/Cake/Model/ConnectionManager.php(105): DboSource->__construct(Array)
+#2 /home/u3967825/public_html/sites/indorack/lib/Cake/Model/Model.php(3640): ConnectionManager::getDataSource('default')
+#3 /home/u3967825/public_html/sites/indorack/lib/Cake/Model/Model.php(1162): Model->setDataSource('default')
+#4 /home/u3967825/public_html/sites/indorack/lib/Cake/Model/Model.php(3667): Model->setSource('users')
+#5 /home/u3967825/public_html/sites/indorack/lib/Cake/Model/Model.php(3038): Model->getDataSource()
+#6 /home/u3967825/public_html/sites/indorack/lib/Cake/Model/Model.php(3010): Model->_readDataSource('first', Array)
+#7 /home/u3967825/public_html/sites/indorack/app/Controller/AppController.php(121): Model->find('first', Array)
+#8 /home/u3967825/public_html/sites/indorack/app/Controller/AppController.php(90): AppController->CheckProfile()
+#9 /home/u3967825/public_html/sites/indorack/app/Controller/OrdersController.php(13): AppController->beforeFilter()
+#10 /home/u3967825/public_html/sites/indorack/lib/Cake/Event/CakeEventManager.php(243): OrdersController->beforeFilter(Object(CakeEvent))
+#11 /home/u3967825/public_html/sites/indorack/lib/Cake/Controller/Controller.php(677): CakeEventManager->dispatch(Object(CakeEvent))
+#12 /home/u3967825/public_html/sites/indorack/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#13 /home/u3967825/public_html/sites/indorack/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(OrdersController), Object(CakeRequest))
+#14 /home/u3967825/public_html/sites/indorack/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2017-09-11 14:15:21 Warning: Warning (2): preg_match(): Compilation failed: invalid range in character class at offset 7 in [/home/u3967825/public_html/sites/indorack/app/Vendor/class.upload.php, line 2902]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+preg_match - [internal], line ??
+upload::upload() - APP/Vendor/class.upload.php, line 2902
+GeneralComponent::ResizeImageContent() - APP/Controller/Component/GeneralComponent.php, line 62
+ApiController::JobResponse() - APP/Controller/ApiController.php, line 2902
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 491
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 110
+
+2017-09-11 14:15:21 Warning: Warning (2): preg_match() [<a href='http://php.net/function.preg-match'>function.preg-match</a>]: Compilation failed: invalid range in character class at offset 7 in [/home/u3967825/public_html/sites/indorack/app/Vendor/class.upload.php, line 2942]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+preg_match - [internal], line ??
+upload::upload() - APP/Vendor/class.upload.php, line 2942
+GeneralComponent::ResizeImageContent() - APP/Controller/Component/GeneralComponent.php, line 62
+ApiController::JobResponse() - APP/Controller/ApiController.php, line 2902
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 491
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 110
+
+2017-09-11 14:15:21 Warning: Warning (2): preg_match() [<a href='http://php.net/function.preg-match'>function.preg-match</a>]: Compilation failed: invalid range in character class at offset 7 in [/home/u3967825/public_html/sites/indorack/app/Vendor/class.upload.php, line 2969]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+preg_match - [internal], line ??
+upload::upload() - APP/Vendor/class.upload.php, line 2969
+GeneralComponent::ResizeImageContent() - APP/Controller/Component/GeneralComponent.php, line 62
+ApiController::JobResponse() - APP/Controller/ApiController.php, line 2902
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 491
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 110
+
+2017-09-11 14:15:21 Warning: Warning (2): preg_match() [<a href='http://php.net/function.preg-match'>function.preg-match</a>]: Compilation failed: invalid range in character class at offset 7 in [/home/u3967825/public_html/sites/indorack/app/Vendor/class.upload.php, line 2996]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+preg_match - [internal], line ??
+upload::upload() - APP/Vendor/class.upload.php, line 2996
+GeneralComponent::ResizeImageContent() - APP/Controller/Component/GeneralComponent.php, line 62
+ApiController::JobResponse() - APP/Controller/ApiController.php, line 2902
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 491
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 110
+
+2017-09-11 14:15:21 Warning: Warning (2): preg_match() [<a href='http://php.net/function.preg-match'>function.preg-match</a>]: Compilation failed: invalid range in character class at offset 7 in [/home/u3967825/public_html/sites/indorack/app/Vendor/class.upload.php, line 3014]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+preg_match - [internal], line ??
+upload::upload() - APP/Vendor/class.upload.php, line 3014
+GeneralComponent::ResizeImageContent() - APP/Controller/Component/GeneralComponent.php, line 62
+ApiController::JobResponse() - APP/Controller/ApiController.php, line 2902
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 491
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 110
+
+2017-09-18 12:00:56 Warning: Warning (2): preg_match() [<a href='http://php.net/function.preg-match'>function.preg-match</a>]: Compilation failed: invalid range in character class at offset 7 in [/home/u3967825/public_html/sites/indorack/app/Vendor/class.upload.php, line 2902]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+preg_match - [internal], line ??
+upload::upload() - APP/Vendor/class.upload.php, line 2902
+GeneralComponent::ResizeImageContent() - APP/Controller/Component/GeneralComponent.php, line 62
+ApiController::PickupFinish() - APP/Controller/ApiController.php, line 2425
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 491
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 110
+
+2017-09-18 12:00:56 Warning: Warning (2): preg_match() [<a href='http://php.net/function.preg-match'>function.preg-match</a>]: Compilation failed: invalid range in character class at offset 7 in [/home/u3967825/public_html/sites/indorack/app/Vendor/class.upload.php, line 2969]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+preg_match - [internal], line ??
+upload::upload() - APP/Vendor/class.upload.php, line 2969
+GeneralComponent::ResizeImageContent() - APP/Controller/Component/GeneralComponent.php, line 62
+ApiController::PickupFinish() - APP/Controller/ApiController.php, line 2425
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 491
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 110
+
+2017-09-18 12:00:56 Warning: Warning (2): preg_match() [<a href='http://php.net/function.preg-match'>function.preg-match</a>]: Compilation failed: invalid range in character class at offset 7 in [/home/u3967825/public_html/sites/indorack/app/Vendor/class.upload.php, line 2996]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+preg_match - [internal], line ??
+upload::upload() - APP/Vendor/class.upload.php, line 2996
+GeneralComponent::ResizeImageContent() - APP/Controller/Component/GeneralComponent.php, line 62
+ApiController::PickupFinish() - APP/Controller/ApiController.php, line 2425
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 491
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 110
+
+2017-09-18 12:00:56 Warning: Warning (2): preg_match() [<a href='http://php.net/function.preg-match'>function.preg-match</a>]: Compilation failed: invalid range in character class at offset 7 in [/home/u3967825/public_html/sites/indorack/app/Vendor/class.upload.php, line 3014]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+preg_match - [internal], line ??
+upload::upload() - APP/Vendor/class.upload.php, line 3014
+GeneralComponent::ResizeImageContent() - APP/Controller/Component/GeneralComponent.php, line 62
+ApiController::PickupFinish() - APP/Controller/ApiController.php, line 2425
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 491
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 110
+
+2017-09-18 12:11:57 Warning: Warning (2): preg_match(): Compilation failed: invalid range in character class at offset 7 in [/home/u3967825/public_html/sites/indorack/app/Vendor/class.upload.php, line 2902]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+preg_match - [internal], line ??
+upload::upload() - APP/Vendor/class.upload.php, line 2902
+GeneralComponent::ResizeImageContent() - APP/Controller/Component/GeneralComponent.php, line 62
+ApiController::JobResponse() - APP/Controller/ApiController.php, line 2954
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 491
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 110
+
+2017-09-18 12:11:57 Warning: Warning (2): preg_match() [<a href='http://php.net/function.preg-match'>function.preg-match</a>]: Compilation failed: invalid range in character class at offset 7 in [/home/u3967825/public_html/sites/indorack/app/Vendor/class.upload.php, line 2969]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+preg_match - [internal], line ??
+upload::upload() - APP/Vendor/class.upload.php, line 2969
+GeneralComponent::ResizeImageContent() - APP/Controller/Component/GeneralComponent.php, line 62
+ApiController::JobResponse() - APP/Controller/ApiController.php, line 2954
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 491
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 110
+
+2017-09-18 12:11:57 Warning: Warning (2): preg_match() [<a href='http://php.net/function.preg-match'>function.preg-match</a>]: Compilation failed: invalid range in character class at offset 7 in [/home/u3967825/public_html/sites/indorack/app/Vendor/class.upload.php, line 2996]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+preg_match - [internal], line ??
+upload::upload() - APP/Vendor/class.upload.php, line 2996
+GeneralComponent::ResizeImageContent() - APP/Controller/Component/GeneralComponent.php, line 62
+ApiController::JobResponse() - APP/Controller/ApiController.php, line 2954
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 491
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 110
+
+2017-09-18 12:11:57 Warning: Warning (2): preg_match() [<a href='http://php.net/function.preg-match'>function.preg-match</a>]: Compilation failed: invalid range in character class at offset 7 in [/home/u3967825/public_html/sites/indorack/app/Vendor/class.upload.php, line 3014]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+preg_match - [internal], line ??
+upload::upload() - APP/Vendor/class.upload.php, line 3014
+GeneralComponent::ResizeImageContent() - APP/Controller/Component/GeneralComponent.php, line 62
+ApiController::JobResponse() - APP/Controller/ApiController.php, line 2954
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 491
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 110
+
+2017-09-18 12:59:52 Warning: Warning (2): preg_match() [<a href='http://php.net/function.preg-match'>function.preg-match</a>]: Compilation failed: invalid range in character class at offset 7 in [/home/u3967825/public_html/sites/indorack/app/Vendor/class.upload.php, line 2902]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+preg_match - [internal], line ??
+upload::upload() - APP/Vendor/class.upload.php, line 2902
+GeneralComponent::ResizeImageContent() - APP/Controller/Component/GeneralComponent.php, line 62
+ApiController::PickupFinish() - APP/Controller/ApiController.php, line 2425
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 491
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 110
+
+2017-09-18 12:59:52 Warning: Warning (2): preg_match() [<a href='http://php.net/function.preg-match'>function.preg-match</a>]: Compilation failed: invalid range in character class at offset 7 in [/home/u3967825/public_html/sites/indorack/app/Vendor/class.upload.php, line 2969]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+preg_match - [internal], line ??
+upload::upload() - APP/Vendor/class.upload.php, line 2969
+GeneralComponent::ResizeImageContent() - APP/Controller/Component/GeneralComponent.php, line 62
+ApiController::PickupFinish() - APP/Controller/ApiController.php, line 2425
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 491
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 110
+
+2017-09-18 12:59:52 Warning: Warning (2): preg_match() [<a href='http://php.net/function.preg-match'>function.preg-match</a>]: Compilation failed: invalid range in character class at offset 7 in [/home/u3967825/public_html/sites/indorack/app/Vendor/class.upload.php, line 2996]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+preg_match - [internal], line ??
+upload::upload() - APP/Vendor/class.upload.php, line 2996
+GeneralComponent::ResizeImageContent() - APP/Controller/Component/GeneralComponent.php, line 62
+ApiController::PickupFinish() - APP/Controller/ApiController.php, line 2425
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 491
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 110
+
+2017-09-18 12:59:52 Warning: Warning (2): preg_match() [<a href='http://php.net/function.preg-match'>function.preg-match</a>]: Compilation failed: invalid range in character class at offset 7 in [/home/u3967825/public_html/sites/indorack/app/Vendor/class.upload.php, line 3014]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+preg_match - [internal], line ??
+upload::upload() - APP/Vendor/class.upload.php, line 3014
+GeneralComponent::ResizeImageContent() - APP/Controller/Component/GeneralComponent.php, line 62
+ApiController::PickupFinish() - APP/Controller/ApiController.php, line 2425
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 491
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 110
+
+2017-09-18 13:16:48 Warning: Warning (2): preg_match() [<a href='http://php.net/function.preg-match'>function.preg-match</a>]: Compilation failed: invalid range in character class at offset 7 in [/home/u3967825/public_html/sites/indorack/app/Vendor/class.upload.php, line 2902]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+preg_match - [internal], line ??
+upload::upload() - APP/Vendor/class.upload.php, line 2902
+GeneralComponent::ResizeImageContent() - APP/Controller/Component/GeneralComponent.php, line 62
+ApiController::PickupFinish() - APP/Controller/ApiController.php, line 2425
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 491
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 110
+
+2017-09-18 13:16:48 Warning: Warning (2): preg_match() [<a href='http://php.net/function.preg-match'>function.preg-match</a>]: Compilation failed: invalid range in character class at offset 7 in [/home/u3967825/public_html/sites/indorack/app/Vendor/class.upload.php, line 2969]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+preg_match - [internal], line ??
+upload::upload() - APP/Vendor/class.upload.php, line 2969
+GeneralComponent::ResizeImageContent() - APP/Controller/Component/GeneralComponent.php, line 62
+ApiController::PickupFinish() - APP/Controller/ApiController.php, line 2425
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 491
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 110
+
+2017-09-18 13:16:48 Warning: Warning (2): preg_match() [<a href='http://php.net/function.preg-match'>function.preg-match</a>]: Compilation failed: invalid range in character class at offset 7 in [/home/u3967825/public_html/sites/indorack/app/Vendor/class.upload.php, line 2996]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+preg_match - [internal], line ??
+upload::upload() - APP/Vendor/class.upload.php, line 2996
+GeneralComponent::ResizeImageContent() - APP/Controller/Component/GeneralComponent.php, line 62
+ApiController::PickupFinish() - APP/Controller/ApiController.php, line 2425
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 491
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 110
+
+2017-09-18 13:16:48 Warning: Warning (2): preg_match() [<a href='http://php.net/function.preg-match'>function.preg-match</a>]: Compilation failed: invalid range in character class at offset 7 in [/home/u3967825/public_html/sites/indorack/app/Vendor/class.upload.php, line 3014]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+preg_match - [internal], line ??
+upload::upload() - APP/Vendor/class.upload.php, line 3014
+GeneralComponent::ResizeImageContent() - APP/Controller/Component/GeneralComponent.php, line 62
+ApiController::PickupFinish() - APP/Controller/ApiController.php, line 2425
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 491
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 110
+
+2017-09-18 13:59:49 Error: [MissingControllerException] Controller class Indorack104Controller could not be found.
+Exception Attributes: array (
+  'class' => 'Indorack104Controller',
+  'plugin' => NULL,
+)
+Request URL: /indorack104
+Stack Trace:
+#0 /home/u3967825/public_html/sites/indorack/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-09-23 14:02:57 Warning: Warning (2): preg_match() [<a href='http://php.net/function.preg-match'>function.preg-match</a>]: Compilation failed: invalid range in character class at offset 7 in [/home/u3967825/public_html/sites/indorack/app/Vendor/class.upload.php, line 2902]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+preg_match - [internal], line ??
+upload::upload() - APP/Vendor/class.upload.php, line 2902
+GeneralComponent::ResizeImageContent() - APP/Controller/Component/GeneralComponent.php, line 62
+ApiController::PickupFinish() - APP/Controller/ApiController.php, line 2425
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 491
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 110
+
+2017-09-23 14:02:57 Warning: Warning (2): preg_match() [<a href='http://php.net/function.preg-match'>function.preg-match</a>]: Compilation failed: invalid range in character class at offset 7 in [/home/u3967825/public_html/sites/indorack/app/Vendor/class.upload.php, line 2969]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+preg_match - [internal], line ??
+upload::upload() - APP/Vendor/class.upload.php, line 2969
+GeneralComponent::ResizeImageContent() - APP/Controller/Component/GeneralComponent.php, line 62
+ApiController::PickupFinish() - APP/Controller/ApiController.php, line 2425
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 491
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 110
+
+2017-09-23 14:02:57 Warning: Warning (2): preg_match() [<a href='http://php.net/function.preg-match'>function.preg-match</a>]: Compilation failed: invalid range in character class at offset 7 in [/home/u3967825/public_html/sites/indorack/app/Vendor/class.upload.php, line 2996]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+preg_match - [internal], line ??
+upload::upload() - APP/Vendor/class.upload.php, line 2996
+GeneralComponent::ResizeImageContent() - APP/Controller/Component/GeneralComponent.php, line 62
+ApiController::PickupFinish() - APP/Controller/ApiController.php, line 2425
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 491
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 110
+
+2017-09-23 14:02:57 Warning: Warning (2): preg_match() [<a href='http://php.net/function.preg-match'>function.preg-match</a>]: Compilation failed: invalid range in character class at offset 7 in [/home/u3967825/public_html/sites/indorack/app/Vendor/class.upload.php, line 3014]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+preg_match - [internal], line ??
+upload::upload() - APP/Vendor/class.upload.php, line 3014
+GeneralComponent::ResizeImageContent() - APP/Controller/Component/GeneralComponent.php, line 62
+ApiController::PickupFinish() - APP/Controller/ApiController.php, line 2425
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 491
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 110
+
+2017-09-23 14:18:10 Warning: Warning (2): preg_match(): Compilation failed: invalid range in character class at offset 7 in [/home/u3967825/public_html/sites/indorack/app/Vendor/class.upload.php, line 2902]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+preg_match - [internal], line ??
+upload::upload() - APP/Vendor/class.upload.php, line 2902
+GeneralComponent::ResizeImageContent() - APP/Controller/Component/GeneralComponent.php, line 62
+ApiController::JobResponse() - APP/Controller/ApiController.php, line 2955
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 491
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 110
+
+2017-09-23 14:18:10 Warning: Warning (2): preg_match() [<a href='http://php.net/function.preg-match'>function.preg-match</a>]: Compilation failed: invalid range in character class at offset 7 in [/home/u3967825/public_html/sites/indorack/app/Vendor/class.upload.php, line 2969]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+preg_match - [internal], line ??
+upload::upload() - APP/Vendor/class.upload.php, line 2969
+GeneralComponent::ResizeImageContent() - APP/Controller/Component/GeneralComponent.php, line 62
+ApiController::JobResponse() - APP/Controller/ApiController.php, line 2955
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 491
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 110
+
+2017-09-23 14:18:10 Warning: Warning (2): preg_match() [<a href='http://php.net/function.preg-match'>function.preg-match</a>]: Compilation failed: invalid range in character class at offset 7 in [/home/u3967825/public_html/sites/indorack/app/Vendor/class.upload.php, line 2996]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+preg_match - [internal], line ??
+upload::upload() - APP/Vendor/class.upload.php, line 2996
+GeneralComponent::ResizeImageContent() - APP/Controller/Component/GeneralComponent.php, line 62
+ApiController::JobResponse() - APP/Controller/ApiController.php, line 2955
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 491
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 110
+
+2017-09-23 14:18:10 Warning: Warning (2): preg_match() [<a href='http://php.net/function.preg-match'>function.preg-match</a>]: Compilation failed: invalid range in character class at offset 7 in [/home/u3967825/public_html/sites/indorack/app/Vendor/class.upload.php, line 3014]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+preg_match - [internal], line ??
+upload::upload() - APP/Vendor/class.upload.php, line 3014
+GeneralComponent::ResizeImageContent() - APP/Controller/Component/GeneralComponent.php, line 62
+ApiController::JobResponse() - APP/Controller/ApiController.php, line 2955
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 491
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 110
+
+2017-09-23 14:29:12 Warning: Warning (2): preg_match(): Compilation failed: invalid range in character class at offset 7 in [/home/u3967825/public_html/sites/indorack/app/Vendor/class.upload.php, line 2902]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+preg_match - [internal], line ??
+upload::upload() - APP/Vendor/class.upload.php, line 2902
+GeneralComponent::ResizeImageContent() - APP/Controller/Component/GeneralComponent.php, line 62
+ApiController::JobResponse() - APP/Controller/ApiController.php, line 2955
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 491
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 110
+
+2017-09-23 14:29:12 Warning: Warning (2): preg_match() [<a href='http://php.net/function.preg-match'>function.preg-match</a>]: Compilation failed: invalid range in character class at offset 7 in [/home/u3967825/public_html/sites/indorack/app/Vendor/class.upload.php, line 2969]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+preg_match - [internal], line ??
+upload::upload() - APP/Vendor/class.upload.php, line 2969
+GeneralComponent::ResizeImageContent() - APP/Controller/Component/GeneralComponent.php, line 62
+ApiController::JobResponse() - APP/Controller/ApiController.php, line 2955
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 491
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 110
+
+2017-09-23 14:29:12 Warning: Warning (2): preg_match() [<a href='http://php.net/function.preg-match'>function.preg-match</a>]: Compilation failed: invalid range in character class at offset 7 in [/home/u3967825/public_html/sites/indorack/app/Vendor/class.upload.php, line 2996]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+preg_match - [internal], line ??
+upload::upload() - APP/Vendor/class.upload.php, line 2996
+GeneralComponent::ResizeImageContent() - APP/Controller/Component/GeneralComponent.php, line 62
+ApiController::JobResponse() - APP/Controller/ApiController.php, line 2955
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 491
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 110
+
+2017-09-23 14:29:12 Warning: Warning (2): preg_match() [<a href='http://php.net/function.preg-match'>function.preg-match</a>]: Compilation failed: invalid range in character class at offset 7 in [/home/u3967825/public_html/sites/indorack/app/Vendor/class.upload.php, line 3014]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+preg_match - [internal], line ??
+upload::upload() - APP/Vendor/class.upload.php, line 3014
+GeneralComponent::ResizeImageContent() - APP/Controller/Component/GeneralComponent.php, line 62
+ApiController::JobResponse() - APP/Controller/ApiController.php, line 2955
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 491
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 110
+
+2017-10-06 10:25:40 Error: [MissingControllerException] Controller class Indorack.apkController could not be found.
+Exception Attributes: array (
+  'class' => 'Indorack.apkController',
+  'plugin' => NULL,
+)
+Request URL: /indorack.apk
+Stack Trace:
+#0 /home/u3967825/public_html/sites/indorack/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-10-06 10:25:53 Error: [MissingControllerException] Controller class Indorack.apkController could not be found.
+Exception Attributes: array (
+  'class' => 'Indorack.apkController',
+  'plugin' => NULL,
+)
+Request URL: /indorack.apk
+Stack Trace:
+#0 /home/u3967825/public_html/sites/indorack/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-10-06 10:38:07 Warning: Warning (2): preg_match(): Compilation failed: invalid range in character class at offset 7 in [/home/u3967825/public_html/sites/indorack/app/Vendor/class.upload.php, line 2902]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+preg_match - [internal], line ??
+upload::upload() - APP/Vendor/class.upload.php, line 2902
+GeneralComponent::ResizeImageContent() - APP/Controller/Component/GeneralComponent.php, line 62
+ApiController::JobResponse() - APP/Controller/ApiController.php, line 2955
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 491
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 110
+
+2017-10-06 10:38:07 Warning: Warning (2): preg_match() [<a href='http://php.net/function.preg-match'>function.preg-match</a>]: Compilation failed: invalid range in character class at offset 7 in [/home/u3967825/public_html/sites/indorack/app/Vendor/class.upload.php, line 2969]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+preg_match - [internal], line ??
+upload::upload() - APP/Vendor/class.upload.php, line 2969
+GeneralComponent::ResizeImageContent() - APP/Controller/Component/GeneralComponent.php, line 62
+ApiController::JobResponse() - APP/Controller/ApiController.php, line 2955
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 491
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 110
+
+2017-10-06 10:38:07 Warning: Warning (2): preg_match() [<a href='http://php.net/function.preg-match'>function.preg-match</a>]: Compilation failed: invalid range in character class at offset 7 in [/home/u3967825/public_html/sites/indorack/app/Vendor/class.upload.php, line 2996]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+preg_match - [internal], line ??
+upload::upload() - APP/Vendor/class.upload.php, line 2996
+GeneralComponent::ResizeImageContent() - APP/Controller/Component/GeneralComponent.php, line 62
+ApiController::JobResponse() - APP/Controller/ApiController.php, line 2955
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 491
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 110
+
+2017-10-06 10:38:07 Warning: Warning (2): preg_match() [<a href='http://php.net/function.preg-match'>function.preg-match</a>]: Compilation failed: invalid range in character class at offset 7 in [/home/u3967825/public_html/sites/indorack/app/Vendor/class.upload.php, line 3014]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+preg_match - [internal], line ??
+upload::upload() - APP/Vendor/class.upload.php, line 3014
+GeneralComponent::ResizeImageContent() - APP/Controller/Component/GeneralComponent.php, line 62
+ApiController::JobResponse() - APP/Controller/ApiController.php, line 2955
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 491
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 110
+
+2017-10-06 10:57:40 Warning: Warning (2): preg_match(): Compilation failed: invalid range in character class at offset 7 in [/home/u3967825/public_html/sites/indorack/app/Vendor/class.upload.php, line 2902]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+preg_match - [internal], line ??
+upload::upload() - APP/Vendor/class.upload.php, line 2902
+GeneralComponent::ResizeImageContent() - APP/Controller/Component/GeneralComponent.php, line 62
+ApiController::JobResponse() - APP/Controller/ApiController.php, line 2955
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 491
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 110
+
+2017-10-06 10:57:40 Warning: Warning (2): preg_match() [<a href='http://php.net/function.preg-match'>function.preg-match</a>]: Compilation failed: invalid range in character class at offset 7 in [/home/u3967825/public_html/sites/indorack/app/Vendor/class.upload.php, line 2969]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+preg_match - [internal], line ??
+upload::upload() - APP/Vendor/class.upload.php, line 2969
+GeneralComponent::ResizeImageContent() - APP/Controller/Component/GeneralComponent.php, line 62
+ApiController::JobResponse() - APP/Controller/ApiController.php, line 2955
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 491
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 110
+
+2017-10-06 10:57:40 Warning: Warning (2): preg_match() [<a href='http://php.net/function.preg-match'>function.preg-match</a>]: Compilation failed: invalid range in character class at offset 7 in [/home/u3967825/public_html/sites/indorack/app/Vendor/class.upload.php, line 2996]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+preg_match - [internal], line ??
+upload::upload() - APP/Vendor/class.upload.php, line 2996
+GeneralComponent::ResizeImageContent() - APP/Controller/Component/GeneralComponent.php, line 62
+ApiController::JobResponse() - APP/Controller/ApiController.php, line 2955
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 491
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 110
+
+2017-10-06 10:57:40 Warning: Warning (2): preg_match() [<a href='http://php.net/function.preg-match'>function.preg-match</a>]: Compilation failed: invalid range in character class at offset 7 in [/home/u3967825/public_html/sites/indorack/app/Vendor/class.upload.php, line 3014]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+preg_match - [internal], line ??
+upload::upload() - APP/Vendor/class.upload.php, line 3014
+GeneralComponent::ResizeImageContent() - APP/Controller/Component/GeneralComponent.php, line 62
+ApiController::JobResponse() - APP/Controller/ApiController.php, line 2955
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 491
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 110
+
+2017-10-06 11:26:07 Warning: Warning (2): preg_match(): Compilation failed: invalid range in character class at offset 7 in [/home/u3967825/public_html/sites/indorack/app/Vendor/class.upload.php, line 2902]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+preg_match - [internal], line ??
+upload::upload() - APP/Vendor/class.upload.php, line 2902
+GeneralComponent::ResizeImageContent() - APP/Controller/Component/GeneralComponent.php, line 62
+ApiController::JobResponse() - APP/Controller/ApiController.php, line 2955
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 491
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 110
+
+2017-10-06 11:26:07 Warning: Warning (2): preg_match() [<a href='http://php.net/function.preg-match'>function.preg-match</a>]: Compilation failed: invalid range in character class at offset 7 in [/home/u3967825/public_html/sites/indorack/app/Vendor/class.upload.php, line 2969]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+preg_match - [internal], line ??
+upload::upload() - APP/Vendor/class.upload.php, line 2969
+GeneralComponent::ResizeImageContent() - APP/Controller/Component/GeneralComponent.php, line 62
+ApiController::JobResponse() - APP/Controller/ApiController.php, line 2955
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 491
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 110
+
+2017-10-06 11:26:07 Warning: Warning (2): preg_match() [<a href='http://php.net/function.preg-match'>function.preg-match</a>]: Compilation failed: invalid range in character class at offset 7 in [/home/u3967825/public_html/sites/indorack/app/Vendor/class.upload.php, line 2996]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+preg_match - [internal], line ??
+upload::upload() - APP/Vendor/class.upload.php, line 2996
+GeneralComponent::ResizeImageContent() - APP/Controller/Component/GeneralComponent.php, line 62
+ApiController::JobResponse() - APP/Controller/ApiController.php, line 2955
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 491
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 110
+
+2017-10-06 11:26:07 Warning: Warning (2): preg_match() [<a href='http://php.net/function.preg-match'>function.preg-match</a>]: Compilation failed: invalid range in character class at offset 7 in [/home/u3967825/public_html/sites/indorack/app/Vendor/class.upload.php, line 3014]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+preg_match - [internal], line ??
+upload::upload() - APP/Vendor/class.upload.php, line 3014
+GeneralComponent::ResizeImageContent() - APP/Controller/Component/GeneralComponent.php, line 62
+ApiController::JobResponse() - APP/Controller/ApiController.php, line 2955
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 491
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 110
+
+2017-10-13 07:31:51 Error: [MissingControllerException] Controller class Robots.txtController could not be found.
+Exception Attributes: array (
+  'class' => 'Robots.txtController',
+  'plugin' => NULL,
+)
+Request URL: /robots.txt
+Stack Trace:
+#0 /home/u3967825/public_html/sites/indorack/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-10-13 07:31:53 Error: [MissingControllerException] Controller class Indorack.apkController could not be found.
+Exception Attributes: array (
+  'class' => 'Indorack.apkController',
+  'plugin' => NULL,
+)
+Request URL: /indorack.apk
+Stack Trace:
+#0 /home/u3967825/public_html/sites/indorack/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2017-10-13 13:26:08 Error: [MissingViewException] View file "Customers/index.php" is missing.
+Exception Attributes: array (
+  'file' => 'Customers/index.php',
+)
+Request URL: /Customers/
+Stack Trace:
+#0 /home/u3967825/public_html/sites/indorack/lib/Cake/View/View.php(470): View->_getViewFileName('Customers/index')
+#1 /home/u3967825/public_html/sites/indorack/lib/Cake/Controller/Controller.php(963): View->render(NULL, NULL)
+#2 /home/u3967825/public_html/sites/indorack/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /home/u3967825/public_html/sites/indorack/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(CustomersController), Object(CakeRequest))
+#4 /home/u3967825/public_html/sites/indorack/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2017-10-13 13:27:51 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ValidateDataCustomer' at line 1
+Request URL: /Customers/Edit/46/1/50
+Stack Trace:
+#0 /home/u3967825/public_html/sites/indorack/lib/Cake/Model/Datasource/DboSource.php(470): PDOStatement->execute(Array)
+#1 /home/u3967825/public_html/sites/indorack/lib/Cake/Model/Datasource/DboSource.php(436): DboSource->_execute('ValidateDataCus...', Array)
+#2 /home/u3967825/public_html/sites/indorack/lib/Cake/Model/Datasource/DboSource.php(673): DboSource->execute('ValidateDataCus...', Array, Array)
+#3 /home/u3967825/public_html/sites/indorack/lib/Cake/Model/Datasource/DboSource.php(616): DboSource->fetchAll('ValidateDataCus...', Array, Array)
+#4 /home/u3967825/public_html/sites/indorack/lib/Cake/Model/Model.php(834): DboSource->query('ValidateDataCus...', Array, Object(User))
+#5 /home/u3967825/public_html/sites/indorack/app/Controller/CustomersController.php(528): Model->__call('ValidateDataCus...', Array)
+#6 [internal function]: CustomersController->Edit('46', '1', '50')
+#7 /home/u3967825/public_html/sites/indorack/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(CustomersController), Array)
+#8 /home/u3967825/public_html/sites/indorack/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /home/u3967825/public_html/sites/indorack/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(CustomersController), Object(CakeRequest))
+#10 /home/u3967825/public_html/sites/indorack/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2017-10-13 13:28:55 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ValidateDataCustomer' at line 1
+Request URL: /Customers/Add
+Stack Trace:
+#0 /home/u3967825/public_html/sites/indorack/lib/Cake/Model/Datasource/DboSource.php(470): PDOStatement->execute(Array)
+#1 /home/u3967825/public_html/sites/indorack/lib/Cake/Model/Datasource/DboSource.php(436): DboSource->_execute('ValidateDataCus...', Array)
+#2 /home/u3967825/public_html/sites/indorack/lib/Cake/Model/Datasource/DboSource.php(673): DboSource->execute('ValidateDataCus...', Array, Array)
+#3 /home/u3967825/public_html/sites/indorack/lib/Cake/Model/Datasource/DboSource.php(616): DboSource->fetchAll('ValidateDataCus...', Array, Array)
+#4 /home/u3967825/public_html/sites/indorack/lib/Cake/Model/Model.php(834): DboSource->query('ValidateDataCus...', Array, Object(User))
+#5 /home/u3967825/public_html/sites/indorack/app/Controller/CustomersController.php(410): Model->__call('ValidateDataCus...', Array)
+#6 [internal function]: CustomersController->Add()
+#7 /home/u3967825/public_html/sites/indorack/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(CustomersController), Array)
+#8 /home/u3967825/public_html/sites/indorack/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /home/u3967825/public_html/sites/indorack/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(CustomersController), Object(CakeRequest))
+#10 /home/u3967825/public_html/sites/indorack/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2017-10-13 13:33:08 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ValidateDataCustomer' at line 1
+Request URL: /Customers/Edit/46/1/50
+Stack Trace:
+#0 /home/u3967825/public_html/sites/indorack/lib/Cake/Model/Datasource/DboSource.php(470): PDOStatement->execute(Array)
+#1 /home/u3967825/public_html/sites/indorack/lib/Cake/Model/Datasource/DboSource.php(436): DboSource->_execute('ValidateDataCus...', Array)
+#2 /home/u3967825/public_html/sites/indorack/lib/Cake/Model/Datasource/DboSource.php(673): DboSource->execute('ValidateDataCus...', Array, Array)
+#3 /home/u3967825/public_html/sites/indorack/lib/Cake/Model/Datasource/DboSource.php(616): DboSource->fetchAll('ValidateDataCus...', Array, Array)
+#4 /home/u3967825/public_html/sites/indorack/lib/Cake/Model/Model.php(834): DboSource->query('ValidateDataCus...', Array, Object(User))
+#5 /home/u3967825/public_html/sites/indorack/app/Controller/CustomersController.php(528): Model->__call('ValidateDataCus...', Array)
+#6 [internal function]: CustomersController->Edit('46', '1', '50')
+#7 /home/u3967825/public_html/sites/indorack/lib/Cake/Controller/Controller.php(491): ReflectionMethod->invokeArgs(Object(CustomersController), Array)
+#8 /home/u3967825/public_html/sites/indorack/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 /home/u3967825/public_html/sites/indorack/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(CustomersController), Object(CakeRequest))
+#10 /home/u3967825/public_html/sites/indorack/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}

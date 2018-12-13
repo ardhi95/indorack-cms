@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<base>
+		<link rel="stylesheet" href="browser.css">
+		<script type="text/javascript" src="jquery-1.9.1.min.js"></script>
+	</head>
+
+	<body>
+		<a href="javascript:void(0);" id="test"><img src="http://centro-cms.amayaperdana.dev/app/webroot/sample_image/10-1.jpg"></a>
+		
+		<script>
+		$(document).ready(function(){
+			$("#test").click(function(){
+				window.opener.CKEDITOR.tools.callFunction(1, "http://centro-cms.amayaperdana.dev/app/webroot/sample_image/10-1.jpg");
+				window.close();
+			});
+		});
+		</script>
+	</body>
+</html>

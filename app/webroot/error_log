@@ -1,0 +1,111 @@
+[14-May-2018 13:38:04 Asia/Jakarta] PHP Parse error:  syntax error, unexpected ';', expecting ')' in /home/k7153775/cms.indorack.co.id/app/Controller/ApidevController.php on line 4027
+[14-May-2018 13:38:07 Asia/Jakarta] PHP Parse error:  syntax error, unexpected ';', expecting ')' in /home/k7153775/cms.indorack.co.id/app/Controller/ApidevController.php on line 4027
+[14-May-2018 13:38:15 Asia/Jakarta] PHP Parse error:  syntax error, unexpected ';', expecting ')' in /home/k7153775/cms.indorack.co.id/app/Controller/ApidevController.php on line 4027
+[14-May-2018 13:38:18 Asia/Jakarta] PHP Parse error:  syntax error, unexpected ';', expecting ')' in /home/k7153775/cms.indorack.co.id/app/Controller/ApidevController.php on line 4027
+[14-May-2018 13:38:26 Asia/Jakarta] PHP Parse error:  syntax error, unexpected ';', expecting ')' in /home/k7153775/cms.indorack.co.id/app/Controller/ApidevController.php on line 4027
+[14-May-2018 13:38:38 Asia/Jakarta] PHP Parse error:  syntax error, unexpected ';', expecting ')' in /home/k7153775/cms.indorack.co.id/app/Controller/ApidevController.php on line 4027
+[14-May-2018 13:38:47 Asia/Jakarta] PHP Parse error:  syntax error, unexpected ';', expecting ')' in /home/k7153775/cms.indorack.co.id/app/Controller/ApidevController.php on line 4027
+[14-May-2018 13:38:56 Asia/Jakarta] PHP Parse error:  syntax error, unexpected end of file in /home/k7153775/cms.indorack.co.id/app/Controller/ApidevController.php on line 3671
+[21-May-2018 10:22:04 Asia/Jakarta] PHP Fatal error:  Cannot redeclare ApidevController::DetailTask() in /home/k7153775/cms.indorack.co.id/app/Controller/ApidevController.php on line 4143
+[21-May-2018 10:22:07 Asia/Jakarta] PHP Fatal error:  Cannot redeclare ApidevController::DetailTask() in /home/k7153775/cms.indorack.co.id/app/Controller/ApidevController.php on line 4143
+[21-May-2018 10:22:11 Asia/Jakarta] PHP Fatal error:  Cannot redeclare ApidevController::DetailTask() in /home/k7153775/cms.indorack.co.id/app/Controller/ApidevController.php on line 4143
+[21-May-2018 10:22:11 Asia/Jakarta] PHP Fatal error:  Cannot redeclare ApidevController::DetailTask() in /home/k7153775/cms.indorack.co.id/app/Controller/ApidevController.php on line 4143
+[21-May-2018 10:22:11 Asia/Jakarta] PHP Fatal error:  Cannot redeclare ApidevController::DetailTask() in /home/k7153775/cms.indorack.co.id/app/Controller/ApidevController.php on line 4143
+[21-May-2018 10:22:17 Asia/Jakarta] PHP Fatal error:  Cannot redeclare ApidevController::DetailTask() in /home/k7153775/cms.indorack.co.id/app/Controller/ApidevController.php on line 4143
+[21-May-2018 10:22:24 Asia/Jakarta] PHP Fatal error:  Cannot redeclare ApidevController::DetailTask() in /home/k7153775/cms.indorack.co.id/app/Controller/ApidevController.php on line 4143
+[21-May-2018 10:22:25 Asia/Jakarta] PHP Fatal error:  Cannot redeclare ApidevController::DetailTask() in /home/k7153775/cms.indorack.co.id/app/Controller/ApidevController.php on line 4143
+[21-May-2018 10:22:25 Asia/Jakarta] PHP Fatal error:  Cannot redeclare ApidevController::DetailTask() in /home/k7153775/cms.indorack.co.id/app/Controller/ApidevController.php on line 4143
+[21-May-2018 10:22:25 Asia/Jakarta] PHP Fatal error:  Cannot redeclare ApidevController::DetailTask() in /home/k7153775/cms.indorack.co.id/app/Controller/ApidevController.php on line 4143
+[21-May-2018 10:22:27 Asia/Jakarta] PHP Fatal error:  Cannot redeclare ApidevController::DetailTask() in /home/k7153775/cms.indorack.co.id/app/Controller/ApidevController.php on line 4143
+[21-May-2018 10:22:37 Asia/Jakarta] PHP Fatal error:  Cannot redeclare ApidevController::DetailTask() in /home/k7153775/cms.indorack.co.id/app/Controller/ApidevController.php on line 4143
+[21-May-2018 10:22:47 Asia/Jakarta] PHP Fatal error:  Cannot redeclare ApidevController::DetailTask() in /home/k7153775/cms.indorack.co.id/app/Controller/ApidevController.php on line 4143
+[21-May-2018 10:22:54 Asia/Jakarta] PHP Fatal error:  Cannot redeclare ApidevController::DetailTask() in /home/k7153775/cms.indorack.co.id/app/Controller/ApidevController.php on line 4143
+[21-May-2018 10:22:58 Asia/Jakarta] PHP Fatal error:  Cannot redeclare ApidevController::DetailTask() in /home/k7153775/cms.indorack.co.id/app/Controller/ApidevController.php on line 4143
+[21-May-2018 10:22:58 Asia/Jakarta] PHP Fatal error:  Cannot redeclare ApidevController::DetailTask() in /home/k7153775/cms.indorack.co.id/app/Controller/ApidevController.php on line 4143
+[21-May-2018 10:22:58 Asia/Jakarta] PHP Fatal error:  Cannot redeclare ApidevController::DetailTask() in /home/k7153775/cms.indorack.co.id/app/Controller/ApidevController.php on line 4143
+[21-May-2018 10:22:58 Asia/Jakarta] PHP Fatal error:  Cannot redeclare ApidevController::DetailTask() in /home/k7153775/cms.indorack.co.id/app/Controller/ApidevController.php on line 4143
+[21-May-2018 10:22:58 Asia/Jakarta] PHP Fatal error:  Cannot redeclare ApidevController::DetailTask() in /home/k7153775/cms.indorack.co.id/app/Controller/ApidevController.php on line 4143
+[21-May-2018 10:22:59 Asia/Jakarta] PHP Fatal error:  Cannot redeclare ApidevController::DetailTask() in /home/k7153775/cms.indorack.co.id/app/Controller/ApidevController.php on line 4143
+[21-May-2018 10:23:03 Asia/Jakarta] PHP Fatal error:  Cannot redeclare ApidevController::DetailTask() in /home/k7153775/cms.indorack.co.id/app/Controller/ApidevController.php on line 4143
+[21-May-2018 10:23:04 Asia/Jakarta] PHP Fatal error:  Cannot redeclare ApidevController::DetailTask() in /home/k7153775/cms.indorack.co.id/app/Controller/ApidevController.php on line 4143
+[21-May-2018 10:23:07 Asia/Jakarta] PHP Fatal error:  Cannot redeclare ApidevController::DetailTask() in /home/k7153775/cms.indorack.co.id/app/Controller/ApidevController.php on line 4143
+[21-May-2018 10:23:17 Asia/Jakarta] PHP Fatal error:  Cannot redeclare ApidevController::DetailTask() in /home/k7153775/cms.indorack.co.id/app/Controller/ApidevController.php on line 4143
+[22-May-2018 23:24:20 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '"SalesOrder.user_id"' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /home/k7153775/cms.indorack.co.id/app/Controller/ApidevController.php on line 4255
+[22-May-2018 23:24:24 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '"SalesOrder.user_id"' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /home/k7153775/cms.indorack.co.id/app/Controller/ApidevController.php on line 4255
+[22-May-2018 23:24:30 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '"SalesOrder.user_id"' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /home/k7153775/cms.indorack.co.id/app/Controller/ApidevController.php on line 4255
+[22-May-2018 23:24:34 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '"SalesOrder.user_id"' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /home/k7153775/cms.indorack.co.id/app/Controller/ApidevController.php on line 4255
+[22-May-2018 23:24:40 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '"SalesOrder.user_id"' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /home/k7153775/cms.indorack.co.id/app/Controller/ApidevController.php on line 4255
+[22-May-2018 23:24:44 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '"SalesOrder.user_id"' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /home/k7153775/cms.indorack.co.id/app/Controller/ApidevController.php on line 4255
+[22-May-2018 23:24:50 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '"SalesOrder.user_id"' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /home/k7153775/cms.indorack.co.id/app/Controller/ApidevController.php on line 4255
+[22-May-2018 23:24:54 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '"SalesOrder.user_id"' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /home/k7153775/cms.indorack.co.id/app/Controller/ApidevController.php on line 4255
+[22-May-2018 23:25:00 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '"SalesOrder.user_id"' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /home/k7153775/cms.indorack.co.id/app/Controller/ApidevController.php on line 4255
+[22-May-2018 23:25:00 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '"SalesOrder.user_id"' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /home/k7153775/cms.indorack.co.id/app/Controller/ApidevController.php on line 4255
+[22-May-2018 23:25:04 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '"SalesOrder.user_id"' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /home/k7153775/cms.indorack.co.id/app/Controller/ApidevController.php on line 4255
+[22-May-2018 23:25:10 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '"SalesOrder.user_id"' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /home/k7153775/cms.indorack.co.id/app/Controller/ApidevController.php on line 4255
+[22-May-2018 23:25:14 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '"SalesOrder.user_id"' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /home/k7153775/cms.indorack.co.id/app/Controller/ApidevController.php on line 4255
+[22-May-2018 23:25:20 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '"SalesOrder.user_id"' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /home/k7153775/cms.indorack.co.id/app/Controller/ApidevController.php on line 4255
+[22-May-2018 23:25:24 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '"SalesOrder.user_id"' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /home/k7153775/cms.indorack.co.id/app/Controller/ApidevController.php on line 4255
+[22-May-2018 23:25:30 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '"SalesOrder.user_id"' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /home/k7153775/cms.indorack.co.id/app/Controller/ApidevController.php on line 4255
+[22-May-2018 23:25:34 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '"SalesOrder.user_id"' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /home/k7153775/cms.indorack.co.id/app/Controller/ApidevController.php on line 4255
+[22-May-2018 23:25:38 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '"SalesOrder.user_id"' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /home/k7153775/cms.indorack.co.id/app/Controller/ApidevController.php on line 4255
+[22-May-2018 23:25:40 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '"SalesOrder.user_id"' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /home/k7153775/cms.indorack.co.id/app/Controller/ApidevController.php on line 4255
+[22-May-2018 23:25:44 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '"SalesOrder.user_id"' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /home/k7153775/cms.indorack.co.id/app/Controller/ApidevController.php on line 4255
+[22-May-2018 23:25:45 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '"SalesOrder.user_id"' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /home/k7153775/cms.indorack.co.id/app/Controller/ApidevController.php on line 4255
+[22-May-2018 23:25:50 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '"SalesOrder.user_id"' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /home/k7153775/cms.indorack.co.id/app/Controller/ApidevController.php on line 4255
+[22-May-2018 23:25:50 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '"SalesOrder.user_id"' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /home/k7153775/cms.indorack.co.id/app/Controller/ApidevController.php on line 4255
+[22-May-2018 23:25:54 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '"SalesOrder.user_id"' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /home/k7153775/cms.indorack.co.id/app/Controller/ApidevController.php on line 4255
+[22-May-2018 23:26:00 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '"SalesOrder.user_id"' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /home/k7153775/cms.indorack.co.id/app/Controller/ApidevController.php on line 4255
+[22-May-2018 23:26:04 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '"SalesOrder.user_id"' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /home/k7153775/cms.indorack.co.id/app/Controller/ApidevController.php on line 4255
+[22-May-2018 23:26:10 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '"SalesOrder.user_id"' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /home/k7153775/cms.indorack.co.id/app/Controller/ApidevController.php on line 4255
+[22-May-2018 23:36:05 Asia/Jakarta] PHP Fatal error:  Call to undefined function loadModel() in /home/k7153775/cms.indorack.co.id/app/Controller/ApidevController.php on line 4251
+[22-May-2018 23:37:10 Asia/Jakarta] PHP Parse error:  syntax error, unexpected ';' in /home/k7153775/cms.indorack.co.id/app/Controller/ApidevController.php on line 4252
+[22-May-2018 23:37:14 Asia/Jakarta] PHP Parse error:  syntax error, unexpected ';' in /home/k7153775/cms.indorack.co.id/app/Controller/ApidevController.php on line 4252
+[22-May-2018 23:37:14 Asia/Jakarta] PHP Parse error:  syntax error, unexpected ';' in /home/k7153775/cms.indorack.co.id/app/Controller/ApidevController.php on line 4252
+[22-May-2018 23:37:20 Asia/Jakarta] PHP Parse error:  syntax error, unexpected ';' in /home/k7153775/cms.indorack.co.id/app/Controller/ApidevController.php on line 4252
+[22-May-2018 23:37:24 Asia/Jakarta] PHP Parse error:  syntax error, unexpected ';' in /home/k7153775/cms.indorack.co.id/app/Controller/ApidevController.php on line 4252
+[22-May-2018 23:37:30 Asia/Jakarta] PHP Parse error:  syntax error, unexpected ';' in /home/k7153775/cms.indorack.co.id/app/Controller/ApidevController.php on line 4252
+[22-May-2018 23:37:34 Asia/Jakarta] PHP Parse error:  syntax error, unexpected ';' in /home/k7153775/cms.indorack.co.id/app/Controller/ApidevController.php on line 4252
+[22-May-2018 23:37:40 Asia/Jakarta] PHP Parse error:  syntax error, unexpected ';' in /home/k7153775/cms.indorack.co.id/app/Controller/ApidevController.php on line 4252
+[22-May-2018 23:37:44 Asia/Jakarta] PHP Parse error:  syntax error, unexpected ';' in /home/k7153775/cms.indorack.co.id/app/Controller/ApidevController.php on line 4252
+[22-May-2018 23:37:50 Asia/Jakarta] PHP Parse error:  syntax error, unexpected ';' in /home/k7153775/cms.indorack.co.id/app/Controller/ApidevController.php on line 4252
+[22-May-2018 23:37:54 Asia/Jakarta] PHP Parse error:  syntax error, unexpected ';' in /home/k7153775/cms.indorack.co.id/app/Controller/ApidevController.php on line 4252
+[22-May-2018 23:38:00 Asia/Jakarta] PHP Parse error:  syntax error, unexpected ';' in /home/k7153775/cms.indorack.co.id/app/Controller/ApidevController.php on line 4252
+[22-May-2018 23:38:04 Asia/Jakarta] PHP Parse error:  syntax error, unexpected ';' in /home/k7153775/cms.indorack.co.id/app/Controller/ApidevController.php on line 4252
+[22-May-2018 23:38:10 Asia/Jakarta] PHP Parse error:  syntax error, unexpected ';' in /home/k7153775/cms.indorack.co.id/app/Controller/ApidevController.php on line 4252
+[22-May-2018 23:38:11 Asia/Jakarta] PHP Parse error:  syntax error, unexpected ';' in /home/k7153775/cms.indorack.co.id/app/Controller/ApidevController.php on line 4252
+[22-May-2018 23:38:14 Asia/Jakarta] PHP Parse error:  syntax error, unexpected ';' in /home/k7153775/cms.indorack.co.id/app/Controller/ApidevController.php on line 4252
+[22-May-2018 23:38:20 Asia/Jakarta] PHP Parse error:  syntax error, unexpected ';' in /home/k7153775/cms.indorack.co.id/app/Controller/ApidevController.php on line 4252
+[22-May-2018 23:38:23 Asia/Jakarta] PHP Parse error:  syntax error, unexpected ';' in /home/k7153775/cms.indorack.co.id/app/Controller/ApidevController.php on line 4252
+[22-May-2018 23:38:24 Asia/Jakarta] PHP Parse error:  syntax error, unexpected ';' in /home/k7153775/cms.indorack.co.id/app/Controller/ApidevController.php on line 4252
+[22-May-2018 23:38:30 Asia/Jakarta] PHP Parse error:  syntax error, unexpected ';' in /home/k7153775/cms.indorack.co.id/app/Controller/ApidevController.php on line 4252
+[22-May-2018 23:38:34 Asia/Jakarta] PHP Parse error:  syntax error, unexpected ';' in /home/k7153775/cms.indorack.co.id/app/Controller/ApidevController.php on line 4252
+[22-May-2018 23:38:40 Asia/Jakarta] PHP Parse error:  syntax error, unexpected ';' in /home/k7153775/cms.indorack.co.id/app/Controller/ApidevController.php on line 4252
+[22-May-2018 23:38:44 Asia/Jakarta] PHP Parse error:  syntax error, unexpected ';' in /home/k7153775/cms.indorack.co.id/app/Controller/ApidevController.php on line 4252
+[22-May-2018 23:38:50 Asia/Jakarta] PHP Parse error:  syntax error, unexpected ';' in /home/k7153775/cms.indorack.co.id/app/Controller/ApidevController.php on line 4252
+[22-May-2018 23:38:54 Asia/Jakarta] PHP Parse error:  syntax error, unexpected ';' in /home/k7153775/cms.indorack.co.id/app/Controller/ApidevController.php on line 4252
+[22-May-2018 23:39:06 Asia/Jakarta] PHP Fatal error:  Call to undefined function loadModel() in /home/k7153775/cms.indorack.co.id/app/Controller/ApidevController.php on line 4251
+[22-May-2018 23:39:11 Asia/Jakarta] PHP Fatal error:  Call to undefined function loadModel() in /home/k7153775/cms.indorack.co.id/app/Controller/ApidevController.php on line 4251
+[22-May-2018 23:39:27 Asia/Jakarta] PHP Fatal error:  Call to undefined function loadModel() in /home/k7153775/cms.indorack.co.id/app/Controller/ApidevController.php on line 4251
+[22-May-2018 23:39:52 Asia/Jakarta] PHP Fatal error:  Call to undefined function loadModel() in /home/k7153775/cms.indorack.co.id/app/Controller/ApidevController.php on line 4251
+[23-May-2018 23:47:36 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '=', expecting ')' in /home/k7153775/cms.indorack.co.id/app/Controller/ApidevController.php on line 4208
+[28-May-2018 16:41:48 Asia/Jakarta] PHP Fatal error:  Call to a member function saveAll() on null in /home/k7153775/cms.indorack.co.id/app/Controller/OrdersController.php on line 514
+[28-May-2018 16:48:14 Asia/Jakarta] PHP Fatal error:  Call to a member function saveAll() on null in /home/k7153775/cms.indorack.co.id/app/Controller/OrdersController.php on line 514
+[04-Jun-2018 15:02:49 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /home/k7153775/cms.indorack.co.id/app/Controller/SalesController.php on line 322
+[04-Jun-2018 15:15:13 Asia/Jakarta] PHP Fatal error:  Call to a member function VirtualFieldActivated() on null in /home/k7153775/cms.indorack.co.id/app/Controller/SalesController.php on line 65
+[04-Jun-2018 16:36:59 Asia/Jakarta] PHP Fatal error:  Call to a member function find() on null in /home/k7153775/cms.indorack.co.id/app/Controller/SalesController.php on line 495
+[04-Jun-2018 16:42:13 Asia/Jakarta] PHP Fatal error:  Call to a member function find() on null in /home/k7153775/cms.indorack.co.id/app/Controller/SalesController.php on line 495
+[04-Jun-2018 16:44:36 Asia/Jakarta] PHP Fatal error:  Call to a member function find() on null in /home/k7153775/cms.indorack.co.id/app/Controller/SalesController.php on line 495
+[04-Jun-2018 16:44:43 Asia/Jakarta] PHP Fatal error:  Call to a member function find() on null in /home/k7153775/cms.indorack.co.id/app/Controller/SalesController.php on line 495
+[04-Jun-2018 16:45:04 Asia/Jakarta] PHP Fatal error:  Call to a member function find() on null in /home/k7153775/cms.indorack.co.id/app/Controller/SalesController.php on line 495
+[04-Jun-2018 16:45:15 Asia/Jakarta] PHP Fatal error:  Call to a member function find() on null in /home/k7153775/cms.indorack.co.id/app/Controller/SalesController.php on line 495
+[04-Jun-2018 16:45:49 Asia/Jakarta] PHP Fatal error:  Call to a member function find() on null in /home/k7153775/cms.indorack.co.id/app/Controller/SalesController.php on line 495
+[04-Jun-2018 16:47:52 Asia/Jakarta] PHP Fatal error:  Call to a member function find() on null in /home/k7153775/cms.indorack.co.id/app/Controller/SalesController.php on line 495
+[04-Jun-2018 16:48:24 Asia/Jakarta] PHP Fatal error:  Call to a member function find() on null in /home/k7153775/cms.indorack.co.id/app/Controller/SalesController.php on line 497
+[04-Jun-2018 16:48:56 Asia/Jakarta] PHP Fatal error:  Call to a member function find() on null in /home/k7153775/cms.indorack.co.id/app/Controller/SalesController.php on line 495
+[09-Jul-2018 23:05:20 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '=', expecting ')' in /home/k7153775/cms.indorack.co.id/app/Controller/OrdersController.php on line 437
+[09-Jul-2018 23:05:32 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '=', expecting ')' in /home/k7153775/cms.indorack.co.id/app/Controller/OrdersController.php on line 437
+[09-Jul-2018 23:52:17 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /home/k7153775/cms.indorack.co.id/app/Controller/OrdersController.php on line 472
+[09-Jul-2018 23:52:34 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /home/k7153775/cms.indorack.co.id/app/Controller/OrdersController.php on line 472
+[12-Jul-2018 13:12:33 Asia/Jakarta] PHP Fatal error:  Call to a member function bindModel() on null in /home/k7153775/cms.indorack.co.id/app/Controller/ApidevController.php on line 4165
+[12-Jul-2018 13:16:05 Asia/Jakarta] PHP Fatal error:  Call to a member function bindModel() on null in /home/k7153775/cms.indorack.co.id/app/Controller/ApidevController.php on line 4165
+[12-Jul-2018 13:26:06 Asia/Jakarta] PHP Fatal error:  Call to a member function bindModel() on null in /home/k7153775/cms.indorack.co.id/app/Controller/ApidevController.php on line 4165
