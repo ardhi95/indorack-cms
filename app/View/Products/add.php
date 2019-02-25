@@ -134,7 +134,7 @@ function PreviewImage(fileId,imageId,lighbox) {
                         <?php echo $this->Form->input("category_id",
                             array(
                                 "div"			=>	array("class"=>"form-group"),
-                                "label"			=>	array("class"	=>	"col-md-3 control-label","text"=>__("Category (*)")),
+                                "label"			=>	array("class"	=>	"col-md-3 control-label","text"=>__("Sub Category (*)")),
                                 "between"		=>	'<div class="col-md-5">',
                                 "after"			=>	"</div>",
                                 "autocomplete"	=>	"off",

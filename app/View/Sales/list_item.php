@@ -408,8 +408,9 @@ $faClass		=	($fullScreenMode == 1) ? 'fa-compress' : 'fa-expand';
                         <?php endif;?>
                     	<th style="width:5%">No</th>
                         <th style="width:10%">Customer Name</th>
-                        <th style="width:7%">No. Tlp</th>
-                        <th style="width:12%">Alamat</th>
+                        <th style="width:6%">No. Tlp</th>
+                        <th style="width:2%">PPN</th>
+                        <th style="width:11%">Alamat</th>
                         <th style="width:11%">Description</th>
                         <th style="width:11%" class="text-center">
                         	<?php echo $this->Paginator->sort("$ModelName.created",__('Created'),array("class"=>"sorting"));?>
@@ -438,6 +439,12 @@ $faClass		=	($fullScreenMode == 1) ? 'fa-compress' : 'fa-expand';
                     	<td><?php echo $no ?></td>
                         <td><?php echo $data[$ModelName]['custname']?></td>
                         <td><?php echo $data[$ModelName]['notlp']?></td>
+                        <td>
+                        	<?php 
+					            $isPPN 	=	$data[$ModelName]['is_ppn'];
+					            echo ($isPPN == 0)?"NO":"YES";
+				            ?>
+                        </td>
                         <td><?php echo $data[$ModelName]['alamat']?></td>
                         <td><?php echo $data[$ModelName]['description']?></td>
                         <td class="text-center">

@@ -352,9 +352,9 @@ class ProductsController extends AppController
 		}//END IF NOT EMPTY
 		
 		//LIST CATEGORY
-		$this->loadModel("ProductCategory");
-		$category_id_list		=	$this->ProductCategory->find("list",array(
-										"order"	=>	"ProductCategory.name"
+		$this->loadModel("ProductSubCategory");
+		$category_id_list		=	$this->ProductSubCategory->find("list",array(
+										"order"	=>	"ProductSubCategory.name"
 									));
 									
 									
@@ -516,9 +516,9 @@ class ProductsController extends AppController
 		
 		
 		//LIST CATEGORY
-		$this->loadModel("ProductCategory");
-		$category_id_list		=	$this->ProductCategory->find("list",array(
-										"order"	=>	"ProductCategory.name"
+		$this->loadModel("ProductSubCategory");
+		$category_id_list		=	$this->ProductSubCategory->find("list",array(
+										"order"	=>	"ProductSubCategory.name"
 									));
 		
 		$this->set(compact(

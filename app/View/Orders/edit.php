@@ -37,7 +37,12 @@
 	  }
 
 	function setEnableDisable() {
-		var status = <?=$detail["DeliveryStatus"]["id"]?>;
+		<?php if ($detail["Order"]["delivery_type_id"] == 1): ?>
+			var status = <?=$detail["DeliveryStatus"]["id"]?>;
+		<?php else: ?>
+			var status = <?=$detail["PickupStatus"]["id"]?>;
+		<?php endif ?>
+		
 		if	(status == 3 || status == 5 || status == 6 || status == 11) {
 			setDisabled("data[Order][delivery_type_id]");
 			setDisabled("data[Order][is_urgent]");
@@ -132,6 +137,11 @@
 	});
 
 	$(document).ready(function(){
+
+    // ========== Is PPN from sales ========= //
+    $(":input[name='data[Order][is_ppn]']").attr("disabled", true);
+    // ========== Is PPN from sales ========= //
+    
 		// ===== Set Enable Disable Fields ===== //
 		setEnableDisable();
 		// ===== Set Enable Disable Fields ===== //
@@ -511,10 +521,10 @@
 				<i class="fa fa-bars"></i>
 				<?php echo __('List Data')?>
 			</a>
-			<a href="<?php echo $settings['cms_url'].$ControllerName?>/Add" class="btn btn-primary">
+			<!-- <a href="<?php echo $settings['cms_url'].$ControllerName?>/Add" class="btn btn-primary">
 				<i class="fa fa-plus"></i>
 				<?php echo __('Add New Data')?>
-			</a>
+			</a> -->
 		</div>
 	</div>
 </div>
@@ -896,6 +906,9 @@
 		                                    "label"			=>	false,
 		                                    "options"		=>	array("1"=>__("Yes"),"0"=>__("No")),
 		                                    "class"			=>	'iradio',
+                                        "attributes"  =>  array(
+                                          'disabled'  =>  true
+                                        ),
 		                                    'error' 		=>	array(
 		                                        'attributes' => array(
 		                                            'wrap' 	=> 'label',
@@ -904,7 +917,7 @@
 		                                    ),
 		                                    "type"			=>	"radio",
 		                                    "legend"		=>	false,
-		                                    "default"		=>	"0"
+                                        "default"   =>  $isPPN
 		                                )
 		                        	)?>
 

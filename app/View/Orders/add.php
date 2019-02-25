@@ -5,98 +5,102 @@
 <script type="text/javascript" src="<?php echo $settings['cms_url']?>js/bootstrap-datepicker.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=<?php echo $settings['map_browser_api_key']?>&language=id&libraries=places"></script>
 <script>
+
 //============ MAP ==============/
-// var map;
-// var marker;
+var map;
+var marker;
 
-// var latitude	=	'<?php echo $settings['default_lat']?>';
-// var longitude	=	'<?php echo $settings['default_lng']?>';
-// <?php if(!empty($this->request->data['Order']['latitude']) && !empty($this->request->data['Order']['longitude'])):?>
-// latitude		=	'<?php echo $this->request->data['Order']['latitude']?>';
-// longitude		=	'<?php echo $this->request->data['Order']['longitude']?>';
-// <?php endif;?>
+var latitude	=	'<?php echo $settings['default_lat']?>';
+var longitude	=	'<?php echo $settings['default_lng']?>';
+<?php if(!empty($this->request->data['Order']['latitude']) && !empty($this->request->data['Order']['longitude'])):?>
+latitude		=	'<?php echo $this->request->data['Order']['latitude']?>';
+longitude		=	'<?php echo $this->request->data['Order']['longitude']?>';
+<?php endif;?>
 
-// var infowindow 	=	new google.maps.InfoWindow();
+var infowindow 	=	new google.maps.InfoWindow();
 
-// var mapLatlng 	=	new google.maps.LatLng(latitude, longitude);
-// var mapOptions 	= {
-//   zoom: 15,
-//   center: mapLatlng,
-//   mapTypeId: 'roadmap'
-// };
+var mapLatlng 	=	new google.maps.LatLng(latitude, longitude);
+var mapOptions 	= {
+  zoom: 15,
+  center: mapLatlng,
+  mapTypeId: 'roadmap'
+};
 
-
-
-// function initMap()
-// {
-// 	map 		= 	new google.maps.Map(document.getElementById('map'), mapOptions);
-// 	marker		=	new google.maps.Marker({
-// 						position	:	mapLatlng,
-// 						map			:	map,
-// 						draggable	:	true
-// 					});
+function initMap()
+{
+	map 		= 	new google.maps.Map(document.getElementById('map'), mapOptions);
+	marker		=	new google.maps.Marker({
+						position	:	mapLatlng,
+						map			:	map,
+						draggable	:	true
+					});
 					
-// 	<?php if(empty($this->request->data['Order']['latitude']) && empty($this->request->data['Order']['longitude'])):?>
-// 		infowindow.setContent('Drag me to change location');
-// 		infowindow.open(map, marker);
-// 		//$("#latStudio").val(map.getCenter().lat());
-// 		//$("#lngStudio").val(map.getCenter().lng());
-// 	<?php elseif(!empty($this->request->data['Order']['latitude']) && !empty($this->request->data['Order']['longitude'])):?>
-// 		infowindow.setContent("Latitude : <?php echo $this->request->data['Order']['latitude']?><br/>Longitude : <?php echo $this->request->data['Order']['longitude']?>");
-// 		infowindow.open(map, marker);
+	<?php if(empty($this->request->data['Order']['latitude']) && empty($this->request->data['Order']['longitude'])):?>
+		infowindow.setContent('Drag me to change location');
+		infowindow.open(map, marker);
+		//$("#latStudio").val(map.getCenter().lat());
+		//$("#lngStudio").val(map.getCenter().lng());
+	<?php elseif(!empty($this->request->data['Order']['latitude']) && !empty($this->request->data['Order']['longitude'])):?>
+		infowindow.setContent("Latitude : <?php echo $this->request->data['Order']['latitude']?><br/>Longitude : <?php echo $this->request->data['Order']['longitude']?>");
+		infowindow.open(map, marker);
 		
-// 	<?php endif;?>
+	<?php endif;?>
 	
-// 	marker.addListener('dragend', function(event){
-// 		$("#latStudio").val(event.latLng.lat());
-// 		$("#lngStudio").val(event.latLng.lng());
-// 		infowindow.setContent("Latitude : "+event.latLng.lat()+"<br/>Longitude : "+event.latLng.lng());
-// 		infowindow.open(map, marker);
-// 	});
+	marker.addListener('dragend', function(event){
+		$("#latStudio").val(event.latLng.lat());
+		$("#lngStudio").val(event.latLng.lng());
+		infowindow.setContent("Latitude : "+event.latLng.lat()+"<br/>Longitude : "+event.latLng.lng());
+		infowindow.open(map, marker);
+	});
 	
-// 	marker.addListener('drag', function(event){
-// 		infowindow.close();
-// 	});
+	marker.addListener('drag', function(event){
+		infowindow.close();
+	});
 	
-// 	var input 		=	document.getElementById('pac-input');
-// 	$("#pac-input").focusin(function(){
-// 		$(this).val('');
-// 	});
+	var input 		=	document.getElementById('pac-input');
+	$("#pac-input").focusin(function(){
+		$(this).val('');
+	});
 	
-// 	var searchBox 	=	new google.maps.places.SearchBox(input);
-// 	map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
-// 	map.addListener('bounds_changed', function() {
-// 	  searchBox.setBounds(map.getBounds());
-// 	});
+	var searchBox 	=	new google.maps.places.SearchBox(input);
+	map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
+	map.addListener('bounds_changed', function() {
+	  searchBox.setBounds(map.getBounds());
+	});
 	
-// 	searchBox.addListener('places_changed', function() {
-// 		var places = searchBox.getPlaces();
-// 		if (places.length == 0) {
-// 			return;
-// 		}
+	searchBox.addListener('places_changed', function() {
+		var places = searchBox.getPlaces();
+		if (places.length == 0) {
+			return;
+		}
 		
-// 		var bounds = new google.maps.LatLngBounds();
-// 		places.forEach(function(place) {
-// 			if (!place.geometry) {
-// 				return;
-// 			}
+		var bounds = new google.maps.LatLngBounds();
+		places.forEach(function(place) {
+			if (!place.geometry) {
+				return;
+			}
 			
-// 			if (place.geometry.viewport) {
-//               bounds.union(place.geometry.viewport);
-//             } else {
-//               bounds.extend(place.geometry.location);
-//             }
+			if (place.geometry.viewport) {
+              bounds.union(place.geometry.viewport);
+            } else {
+              bounds.extend(place.geometry.location);
+            }
 			
-// 			marker.setPosition(place.geometry.location);
-// 			$("#latStudio").val(bounds.getCenter().lat());
-// 			$("#lngStudio").val(bounds.getCenter().lng());
-// 		});
-// 		map.fitBounds(bounds);
-// 		infowindow.setContent("Latitude : "+bounds.getCenter().lat()+"<br/>Longitude : "+bounds.getCenter().lng());
-// 		infowindow.open(map, marker);
-// 	});
-// }
+			marker.setPosition(place.geometry.location);
+			$("#latStudio").val(bounds.getCenter().lat());
+			$("#lngStudio").val(bounds.getCenter().lng());
+		});
+		map.fitBounds(bounds);
+		infowindow.setContent("Latitude : "+bounds.getCenter().lat()+"<br/>Longitude : "+bounds.getCenter().lng());
+		infowindow.open(map, marker);
+	});
+}
 //============ MAP ==============/
+
+function DirectCustomerAdd() {
+	var URL 		=	"<?= $settings['cms_url']."Customers/Add" ?>";
+	location.href 	= 	URL;
+}
 
 function OpenFormAddNewCustomer()
 {
@@ -291,6 +295,10 @@ $(document).ready(function(){
 		$("#pickupDiv").hide();
 	<?php endif;?>
 	//========= DELIVERY ============//
+
+	// ========== Is PPN from sales ========= //
+	$(":input[name='data[Order][is_ppn]']").attr("disabled", true);
+	// ========== Is PPN from sales ========= //
 });
 </script>
 <?php $this->end()?>
@@ -487,13 +495,17 @@ $(document).ready(function(){
                                 )
                             )?>
                         </div>
+                        
+                        <!-- <?php echo $settings['cms_url'].$ControllerName?>
+                        "after"			=>	"<span class='help-block' style='color:#000000;'>Customers not exists in list ?, <a href='javascript:void(0);' onclick='OpenFormAddNewCustomer();'>click here</a> to add new customer</span></div>", -->
+                        <?php $addlink = $settings['cms_url']."Customers/Add" ?>
                         <div class="col-md-6">
                             <?php echo $this->Form->input("customer_id",
                                 array(
                                     "div"			=>	array("class"=>"form-group"),
                                     "label"			=>	array("class"	=>	"col-md-12","text"=>__("Customers (*)")),
                                     "between"		=>	'<div class="col-md-12">',
-                                    "after"			=>	"<span class='help-block' style='color:#000000;'>Customers not exists in list ?, <a href='javascript:void(0);' onclick='OpenFormAddNewCustomer();'>click here</a> to add new customer</span></div>",
+                                    "after"			=>	"<span class='help-block' style='color:#000000;'>Customers not exists in list ?, <a href='javascript:void(0);' onclick='DirectCustomerAdd();'>click here</a> to add new customer</span></div>",
                                     "autocomplete"	=>	"off",
                                     "options"		=>	$customer_id_list,
                                     "class"			=>	'form-control select',
@@ -631,7 +643,85 @@ $(document).ready(function(){
 								"escape"		=>	false
 							)
 						)?>
+
+						<?php echo $this->Form->input("phone1",
+								array(
+									"div"			=>	array("class"=>"form-group"),
+									"label"			=>	array("class"	=>	"col-md-3 control-label","text"=>__("Phone No. (*)")),
+									"between"		=>	'<div class="col-md-5">',
+									"after"			=>	"</div>",
+									"autocomplete"	=>	"new-password",
+									"type"			=>	"text",
+									"class"			=>	'form-control',
+									'error' 		=>	array(
+										'attributes' => array(
+											'wrap' 	=> 'label',
+											'class' => 'error'
+										)
+									),
+									"format"		=>	array(
+										'before',
+										'label',
+										'between',
+										'input',
+										'error',
+										'after',
+									),
+									"escape"		=>	false
+								)
+							)?>
+								
+							<?php echo $this->Form->input("address",
+								array(
+									"div"			=>	array("class"=>"form-group"),
+									"label"			=>	array(
+															"class"	=>	"col-md-3 control-label",
+															"text"	=>	"Address (*)"
+														),
+									"between"		=>	'<div class="col-md-5">',
+									"after"			=>	'</div>',
+									"autocomplete"	=>	"off",
+									"type"			=>	"textarea",
+									"class"			=>	'form-control',
+									'error' 		=>	array(
+										'attributes' => array(
+											'wrap' 	=> 'label',
+											'class' => 'error'
+										)
+									),
+									"format"		=>	array(
+										'before',
+										'label',
+										'between',
+										'input',
+										'error',
+										'after',
+									),
+									"rows"	=>	10
+								)
+							)?>
 						
+							<!-- <div class="form-group">
+                                <label class="col-md-3 control-label">Map Position</label>
+                                <div class="col-md-5"  style="padding-left:15px; padding-right:15px;">
+                                    <input type="text" id="pac-input" placeholder="Search Your Place" class="form-control"/>
+                                    <?php
+                                    $border	=	"#CCC";
+                                    if ($this->Form->isFieldError('Order.latitude'))
+                                    {
+                                        $border	=	"#b64645";
+                                    }
+                                    ?>
+                                    <div id="map" style="display:block; float:left; height:270px; width:100%; border:1px solid <?php echo $border?>; border-radius:4px;">
+                                    </div>
+                                    
+                                    <?php echo $this->Form->error("Order.latitude",null,array("wrap"=>"label","class"=>"error"))?>
+                                    <?php echo $this->Form->input("latitude",array("id"=>"latStudio","readonly"=>"readonly"))?>
+                            		<?php echo $this->Form->input("longitude",array("id"=>"lngStudio","readonly"=>"readonly"))?>
+                                </div>
+                            </div> -->
+                            
+                            
 						<hr style="margin-top:50px;"/>
                     </div>
                     <div class="col-md-3">
@@ -695,7 +785,7 @@ $(document).ready(function(){
                                     ),
                                     "type"			=>	"radio",
                                     "legend"		=>	false,
-                                    "default"		=>	"0"
+                                    "default"		=>	$isPPN
                                 )
                         	)?>
 

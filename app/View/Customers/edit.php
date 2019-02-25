@@ -175,7 +175,7 @@ $(document).ready(function(){
     //======= DATETIMEPICKER =======/
 	
 	//======== INIT MAP =============/
-	initMap();
+	// initMap();
 	//======== INIT MAP =============/
 	
 	<?php if($this->request->data['User']['is_new_customer'] == "1"):?>

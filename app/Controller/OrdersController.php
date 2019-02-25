@@ -559,7 +559,7 @@ class OrdersController extends AppController
 								);
 		}
 
-		pr("Woooooooooooooo");
+		// pr("Woooooooooooooo");
 		//========== Genenrate PO & DO id ==========//
 		$dateTimeZone 	= 	date_default_timezone_set("Asia/Jakarta");
 		$date         	= 	date('ymdHis', time());
@@ -573,7 +573,7 @@ class OrdersController extends AppController
 		$errorProductQty	=	array();
 		$errorProductNotes	=	array();
 		
-		var_dump($this->request->data);
+		// var_dump($this->request->data);
 
 		if(!empty($this->request->data))
 		{
@@ -702,6 +702,7 @@ class OrdersController extends AppController
 				$isNewUser	=	$this->request->data[$this->ModelName]['is_new_customer'];
 				if($isNewUser == "1")
 				{
+					var_dump($this->request->data[$this->ModelName]['latitude']);
 					$data['User']['firstname']	=	$this->request->data[$this->ModelName]['firstname'];
 					$data['User']['lastname']	=	$this->request->data[$this->ModelName]['lastname'];
 					$data['User']['email']		=	$this->request->data[$this->ModelName]['email'];
@@ -964,7 +965,7 @@ class OrdersController extends AppController
 		//$this->render("add_bak");
 	}
 
-	function Edit($ID = NULL, $page = 1, $viewpage = 50, $tab_index="tab1", $salesPoId)
+	function Edit($ID = NULL, $page = 1, $viewpage = 50, $tab_index="tab1")
 	{
 		
 		$this->loadModel('SalesOrder');
@@ -1237,7 +1238,7 @@ class OrdersController extends AppController
 												"Product.code"
 											)
 										));
-							
+		// var_dump($detail);
 		$this->set(compact(
 			"detail",
 			"driver",

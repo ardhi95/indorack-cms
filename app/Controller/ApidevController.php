@@ -564,10 +564,49 @@ class ApidevController extends AppController
 									)
 								)
 						);
-		
-		
+
+		// ===== Set date day -2 ===== //
+		$datenow = date('Y-m-d');
+		$date = new DateTime($datenow);
+		$date->sub(new DateInterval('P2D'));
+		$resultDate = $date->format('Y-m-d');
+		// ===== End Set date day -2 ===== //
+
+		// ===== Condition date ===== //
+		if ($task_type_id == "1") {
+			$dateCondition 	=	array(
+				"(CASE WHEN DATE_FORMAT(Order.delivery_date, '%Y-%m-%d') BETWEEN '".$resultDate."' AND '".date('Y-m-d')."'".
+				" THEN TaskStatus.id != '0' ELSE TaskStatus.id != '11' END) "
+			);
+
+			// $dateCondition 	=	array(
+			// 	"OR"	=>	array(
+			// 		"AND" 	=> 	array(
+			// 			"DATE_FORMAT(Order.delivery_date, '%Y-%m-%d') BETWEEN '".$resultDate."' AND '".date('Y-m-d')."'",
+			// 		),
+			// 		"TaskStatus.id !=" 	=>	array(10,11)
+			// 	)
+			// );
+		} else {
+			$dateCondition 	=	array(
+				"(CASE WHEN DATE_FORMAT(Order.assembly_date, '%Y-%m-%d') BETWEEN '".$resultDate."' AND '".date('Y-m-d')."'".
+				" THEN TaskStatus.id != '0' ELSE TaskStatus.id != '11' END) "
+			);
+
+			// $dateCondition 	=	array(
+			// 	"OR"	=>	array(
+			// 		"AND"	=>	array(
+			// 			"DATE_FORMAT(Order.assembly_date, '%Y-%m-%d') BETWEEN '".$resultDate."' AND '".date('Y-m-d')."'"
+			// 		),
+			// 		"TaskStatus.id !=" 	=>	array(10,11)
+			// 	)
+			// );
+		}
+		// ===== END Condition date ===== //
+
 		$conditions			=	array(
-									"Task.task_type_id"			=>	$task_type_id
+									"Task.task_type_id"			=>	$task_type_id,
+									$dateCondition,
 								);
 								
 		$this->paginate		=	array(
@@ -702,10 +741,24 @@ class ApidevController extends AppController
 			"fullname"		=> "CONCAT(Customer.firstname,' ',Customer.lastname)",
 		);
 		
-		
-		$conditions			=	array(
-									"Order.delivery_type_id"	=>	"2"
-								);
+		// ===== Set date day -2 ===== //
+		$datenow = date('Y-m-d');
+		$date = new DateTime($datenow);
+		$date->sub(new DateInterval('P2D'));
+		$resultDate = $date->format('Y-m-d');
+		// ===== End Set date day -2 ===== //
+
+		$conditions		=	array(
+								"Order.delivery_type_id"	=>	"2",
+								"(CASE WHEN DATE_FORMAT(Order.pickup_date, '%Y-%m-%d') BETWEEN '".$resultDate."' AND '".date('Y-m-d')."'".
+								" THEN Order.pickup_status != '0' ELSE Order.pickup_status != '10' END) "
+									// "OR"	=>	array(
+									// 	"AND"	=>	array(
+									// 		"DATE_FORMAT(Order.pickup_date, '%Y-%m-%d') BETWEEN '".$resultDate."' AND '".date('Y-m-d')."'",
+									// 	),
+									// 	"Order.pickup_status !="	=>	"10"
+									// )
+							);
 								
 		$this->paginate		=	array(
 			"Order"	=>	array(
@@ -1029,6 +1082,7 @@ class ApidevController extends AppController
 									"User.id"		=>	$user_id
 								)
 							));
+
 		
 		if(empty($check))
 		{				
@@ -1046,7 +1100,13 @@ class ApidevController extends AppController
 			return;
 		}
 		
-		
+		// pr($check["User"]["aro_id"]." Disini");
+		if ($check["User"]["aro_id"] == 5) {
+			$taskCondition 	=	"Order.assembly_status	=	TaskStatus.id";
+		} else {
+			$taskCondition 	=	"Order.delivery_status	=	TaskStatus.id";
+		}
+
 		$this->loadModel("TaskHistory");
 		$joins			=	array(
 								array(
@@ -1078,15 +1138,30 @@ class ApidevController extends AppController
 									"alias"			=>	"TaskStatus",
 									'type'			 => 'LEFT',
 									"conditions"	=>	array(
-										"TaskHistory.status	=	TaskStatus.id"
+										$taskCondition
 									)
 								)
 							);
 		
-		
+		// ===== Set date day -2 ===== //
+		$datenow = date('Y-m-d');
+		$date = new DateTime($datenow);
+		$date->sub(new DateInterval('P2D'));
+		$resultDate = $date->format('Y-m-d');
+		// ===== End Set date day -2 ===== //
+
+		if ($check["User"]["aro_id"] == 5) {
+			$filter 	=	"(CASE WHEN DATE_FORMAT(Order.assembly_date, '%Y-%m-%d') BETWEEN '".$resultDate."' AND '".date('Y-m-d')."'".
+									" THEN TaskStatus.id != '0' ELSE TaskStatus.id != '11' END) ";
+		} else {
+			$filter 	=	"(CASE WHEN DATE_FORMAT(Order.delivery_date, '%Y-%m-%d') BETWEEN '".$resultDate."' AND '".date('Y-m-d')."'".
+									" THEN TaskStatus.id != '0' ELSE TaskStatus.id != '11' END) ";
+		}
+
 		$conditions			=	array(
 									"TaskHistory.employee_id"	=>	$user_id,
-									"TaskHistory.id	=	(SELECT MAX(id) FROM task_histories WHERE task_id = TaskHistory.task_id and employee_id = ".$user_id.")"
+									"TaskHistory.id	=	(SELECT MAX(id) FROM task_histories WHERE task_id = TaskHistory.task_id and employee_id = ".$user_id.")",
+									$filter
 								);
 								
 		$this->paginate		=	array(
@@ -1470,6 +1545,7 @@ class ApidevController extends AppController
 		else
 		{
 			$this->loadModel("Task");
+			$this->loadModel("Order");
 			$joins			=	array(
 									array(
 										"table"			=>	"orders",
@@ -1494,7 +1570,15 @@ class ApidevController extends AppController
 										"conditions"	=>	array(
 											"Order.customer_id	=	Customer.id"
 										)
-									)
+									),
+									// array(
+									// 	"table"			=>	"contents",
+									// 	"alias"			=>	"Images",
+									// 	"type"			=>	"LEFT",
+									// 	"conditions"	=>	array(
+									// 		"Order.id 	=	Images.model_id",
+									// 	)
+									// )
 								);
 								
 			$data			=	$this->Task->find("first",array(
@@ -1546,6 +1630,16 @@ class ApidevController extends AppController
 				$assign				=	!empty($findAssignment) ? $findAssignment : array();
 				$data['TaskAssign']	=	$assign;
 				
+				//FIND IMAGE
+				$this->loadModel("Content");
+				$ImagesContent 		=	$this->Content->find("all", array(
+											"conditions"	=>	array(
+												"Content.model_id"	=> $data["Order"]["id"],
+												"Content.model"	=>	"Task",
+												"Content.type"	=>	"maxwidth"
+											)
+				));
+				$data['Images']	=	!empty($ImagesContent) ? $ImagesContent : array();
 				
 				//FIND PRODUCT
 				$this->loadModel("OrderProduct");
@@ -3191,6 +3285,86 @@ class ApidevController extends AppController
 		}
 	}
 	
+	function UploadTaskImage()
+	{
+		$status			=	false;
+		$message		=	ERR_04;
+		$code			=	"04";
+		$data			=	array();
+        $checkinDetail  =   array();
+
+		$fileArr		=	(isset($_REQUEST["fileArr"]) && !empty($_REQUEST["fileArr"]) ) ? $_REQUEST["fileArr"] : $fileArr;
+
+		if(empty($fileArr))
+		{
+			$status		=	true;
+			$message	=	ERR_00;
+			$code		=	"00";
+			
+			if(!empty($_FILES['images']['name']))
+					{
+						$tmp_name							=	$_FILES['images']["name"];
+						$tmp								=	$_FILES['images']["tmp_name"];
+						
+		
+						$path_tmp							=	ROOT.DS.'app'.DS.'tmp'.DS.'upload'.DS;
+							if(!is_dir($path_tmp)) mkdir($path_tmp,0777);
+		
+						$ext								=	pathinfo($tmp_name,PATHINFO_EXTENSION);
+						$tmp_file_name						=	md5(time());
+						$tmp_images1_img					=	$path_tmp.$tmp_file_name.".".$ext;
+						$upload 							=	move_uploaded_file($tmp,$tmp_images1_img);
+						
+						if($upload)
+						{
+							$mime_type						=	mime_content_type($tmp_images1_img);
+							$resize							=	$this->General->ResizeMultiImageContent(
+																  $tmp_images1_img,
+																  $this->settings["cms_url"],
+																  $taskId,
+																  $fileArr,
+																  "Task",
+																  "maxwidth",
+																  $mime_type,
+																  800,
+																  300,
+																  "resizeMaxWidth"
+															  );
+		
+						}
+						@unlink($tmp_images1_img);
+					}
+		}
+		else
+		{
+			$status		=	false;
+			foreach($error as $k => $v)
+			{
+				$message	=	$v[0];
+				break;
+			}
+			$code		=	"03";
+			$data		=	null;
+		}
+
+		$out			=	array(
+			"status"				=>	$status,
+			"message"				=>	$message,
+			"data"					=>	$data,
+			"code"					=>	$code,
+			"request"				=>	$_REQUEST,
+			"file"					=>	$_FILES
+		);
+
+
+		$json		=	json_encode($out);
+		$this->response->type('json');
+		$this->response->body($json);
+		if(isset($_GET['debug']) && $_GET['debug'] == "1")
+		{
+			pr($out);
+		}
+	}
 	
 	function DetailTaskHistory()
 	{
@@ -3886,7 +4060,88 @@ class ApidevController extends AppController
 			pr($out);
 		}
 	}
-	
+
+	function ProductSubCategoryList()
+	{
+		$status			=	true;
+		$message		=	ERR_03;
+		$data			=	array();
+		$code			=	"03";
+			
+		$user_id		=	isset($_REQUEST['user_id']) ? $_REQUEST['user_id'] : NULL;
+		$category_id	=	isset($_REQUEST['category_id']) ? $_REQUEST['category_id'] : NULL;
+		$page			=	(!isset($_REQUEST['page'])) ? 1 : $_REQUEST['page'];
+							
+							
+		$conditions		=	array(
+								"AND"	=>	array(
+									"ProductSubCategory.status" 		=>	"1",
+									"ProductSubCategory.category_id" 	=>	$category_id
+								)
+		);
+							
+		$order			=	"ProductSubCategory.id asc";
+		
+		$this->loadModel("ProductSubCategory");
+		$this->ProductSubCategory->BindImageContent(false);
+		
+		$this->paginate		=	array(
+			"ProductSubCategory"	=>	array(
+				"page"			=>	$page,		
+				"limit"			=>	10,
+				
+				"conditions"	=>	$conditions,
+				"order"			=>	$order,
+				"recursive"		=>	3
+			)
+		);
+		
+		try
+		{
+			$fData		=	$this->paginate("ProductSubCategory");
+		}
+		catch(NotFoundException $e)
+		{
+			$fData		=	array();
+		}
+		
+		
+		if(empty($fData))
+		{
+			$status		=	false;
+			$message	=	ERR_02;
+			$data		=	array();
+			$code		=	"02";
+		}
+		else
+		{
+			$status		=	true;
+			$message	=	ERR_00;
+			$code		=	"00";
+			$data		=	$fData;
+		}
+		
+		$out	=	array(
+						"status"	=>	$status,
+						"message"	=>	$message,
+						"data"		=>	$data,
+						"code"		=>	$code,
+						"pageCount"	=>	$this->params['paging']['ProductCategory']['pageCount'],
+						"page"		=>	$this->params['paging']['ProductCategory']['page'],
+						"totalData"	=>	$this->params['paging']['ProductCategory']['count'],
+						"nextPage"	=>	$this->params['paging']['ProductCategory']['nextPage'],
+						"request"		=>	$_REQUEST
+					);
+		
+		$json		=	json_encode($out);
+		$this->response->type('json');
+		$this->response->body($json);
+		if(isset($_GET['debug']) && $_GET['debug'] == "1")
+		{
+			pr($out);
+		}
+	}
+
 	function ProductList()
 	{
 		$status			=	true;
@@ -4014,7 +4269,7 @@ class ApidevController extends AppController
 								"ProductCategory.status" =>	"1"
 							);
 							
-		$order			=	"ProductCategory.id desc";
+		$order			=	"ProductCategory.id asc";
 		
 		$this->loadModel("ProductCategory");
 		$this->ProductCategory->BindImageContent(false);
@@ -4213,48 +4468,59 @@ class ApidevController extends AppController
 								);
 		$this->loadModel("Order");
 		$this->loadModel("Task");
-		$this->SalesOrder->bindModel(array(
-				"hasOne"	=>	array(
-					"Order"	=>	array(
-						"className"		=>	"Order",
-						"foreignKey"	=>	false,
-						"conditions"	=>	array(
-							"SalesOrder.order_id = Order.id"
-						),
-						"fields"		=>	array(
-							"Order.id",
-							"Order.delivery_status",
-							"Order.assembly_status",
-							"Order.order_no",
-							"Order.delivery_type_id",
-							"Order.pickup_status",
-							"Order.delivery_type_id"
-						)
-					),
-					"Task"	=> array(
-						"className"		=>	"Task",
-						"foreignKey"	=>	false,
-						"conditions"	=>	array(
-							"SalesOrder.order_id = Task.order_id"
-						),
-						"fields"		=>	array(
-							"id",
-							"task_type_id",
-							"status"
-						)
-					)
-				)
-			)
-		);
+
+		$joins			=	array(
+								array(
+									"table"			=>	"tasks",
+									"alias"			=>	"Task",
+									'type'			 => 'LEFT',
+									"conditions"	=>	array(
+										"Task.order_id	=	SalesOrder.order_id"
+									)
+								),
+								array(
+									"table"			=>	"orders",
+									"alias"			=>	"Order",
+									'type'			 => 'LEFT',
+									"conditions"	=>	array(
+										"Order.id	=	SalesOrder.order_id"
+									)
+								),
+							);
+		// ===== Set date day -2 ===== //
+		$datenow = date('Y-m-d');
+		$date = new DateTime($datenow);
+		$date->sub(new DateInterval('P2D'));
+		$resultDate = $date->format('Y-m-d');
+		// ===== End Set date day -2 ===== //
 		
 		$group 			=	"SalesOrder.id";
 		$order			=	"SalesOrder.modified desc";
+		$conditions		=	array(
+									"OR" 	=>	array(
+										"DATE_FORMAT(SalesOrder.created, '%Y-%m-%d') BETWEEN '".$resultDate."' AND '".date('Y-m-d')."'",
+										"Task.status !="		=> 	array(10,11),
+										"SalesOrder.order_id"	=>	"0"
+									)
+								);
 
 		$this->paginate		=	array(
 			"SalesOrder"	=>	array(
+				"fields"		=>	array(
+					"SalesOrder.*",
+					"Order.id",
+					"Order.delivery_status",
+					"Order.assembly_status",
+					"Order.order_no",
+					"Order.delivery_type_id",
+					"Order.pickup_status",
+					"Order.delivery_type_id",
+					"Task.*"
+				),
 				"order"			=>	"SalesOrder.id desc",
 				"page"			=>	$page,		
 				"limit"			=>	10,
+				"joins"			=>	$joins,
 				"conditions"	=>	$conditions,
 				"group"			=>	$group,
 				"order"			=>	$order,
@@ -4321,6 +4587,7 @@ class ApidevController extends AppController
 		$request["SalesOrder"]["alamat"]		=	empty($_REQUEST["alamat"]) ? "" : $_REQUEST["alamat"];
 		$request["SalesOrder"]["description"]	=	empty($_REQUEST["description"]) ? NULL : $_REQUEST["description"];
 		$request["SalesOrder"]["user_id"]		=	empty($_REQUEST["user_id"]) ? NULL : $_REQUEST["user_id"];
+		$request["SalesOrder"]["is_ppn"]		=	$_REQUEST["is_ppn"];
 
 		$user_id 		=	empty($_REQUEST["user_id"]) ? NULL : $_REQUEST["user_id"];
 		//$request["SalesOrder"]["status"]		=	empty($_REQUEST["status"]) ? NULL : $_REQUEST["status"];
@@ -4412,6 +4679,7 @@ class ApidevController extends AppController
 		$request["SalesOrder"]["alamat"]		=	empty($_REQUEST["alamat"]) ? "" : $_REQUEST["alamat"];
 		$request["SalesOrder"]["description"]	=	empty($_REQUEST["description"]) ? NULL : $_REQUEST["description"];
 		$request["SalesOrder"]["user_id"]		=	empty($_REQUEST["user_id"]) ? NULL : $_REQUEST["user_id"];
+		$request["SalesOrder"]["is_ppn"]		=	empty($_REQUEST["is_ppn"]) ? NULL : $_REQUEST["is_ppn"];
 
 		$user_id 		=	empty($_REQUEST["user_id"]) ? NULL : $_REQUEST["user_id"];
 		$salesOrderId	=	empty($_REQUEST["id"]) ? NULL : $_REQUEST["id"];
@@ -4449,7 +4717,8 @@ class ApidevController extends AppController
 						"SalesOrder.custname" 		=>	"'".$request["SalesOrder"]["custname"]."'",
 						"SalesOrder.notlp"			=>	"'".$request["SalesOrder"]["notlp"]."'",
 						"SalesOrder.alamat"			=>	"'".$request["SalesOrder"]["alamat"]."'",
-						"SalesOrder.description"	=>	"'".$request["SalesOrder"]["description"]."'"
+						"SalesOrder.description"	=>	"'".$request["SalesOrder"]["description"]."'",
+						"SalesOrder.is_ppn"			=>	"'".$request["SalesOrder"]["is_ppn"]."'"
 					),
 						array(
 							"SalesOrder.id"				=>	$salesOrderId
@@ -4927,7 +5196,8 @@ class ApidevController extends AppController
 						"Task.status" 		=>	"11"
 					),
 						array(
-							"Task.order_id"					=>	$order_id
+							"Task.order_id"					=>	$order_id,
+							"Task.task_type_id"				=>	"1"
 						), true
 				);
 				//========== Update Task ==========//
@@ -5045,7 +5315,7 @@ class ApidevController extends AppController
 				//========== Update Delivery Order ==========//
 				$this->Order->updateAll(
 					array(
-						"Order.delivery_status" 		=>	"11"
+						"Order.assembly_status" 		=>	"11"
 					),
 						array(
 							"Order.id"					=>	$order_id
@@ -5059,7 +5329,8 @@ class ApidevController extends AppController
 						"Task.status" 		=>	"11"
 					),
 						array(
-							"Task.order_id"					=>	$order_id
+							"Task.order_id"					=>	$order_id,
+							"Task.task_type_id"				=>	"2"
 						), true
 				);
 				//========== Update Task ==========//

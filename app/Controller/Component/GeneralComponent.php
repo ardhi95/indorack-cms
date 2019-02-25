@@ -106,6 +106,98 @@ class GeneralComponent extends Component
 		return false;
 	}
 	
+	function ResizeMultiImageContent($source,$host,$model_id,$fileArr,$model_name,$type,$mime_type,$width,$height,$resizeType = 'cropResize')
+	{
+		//SETTING
+		$this->settings = Cache::read('settings', 'long');
+		if(!$this->settings || (isset($_GET['debug']))) {
+
+			$this->loadModel('Setting');
+			$settings			=	$this->Setting->find('first');
+			$this->settings		=	$settings['Setting'];
+			Cache::write('settings', $this->settings, 'long');
+		}
+
+		$ext									=	pathinfo($source,PATHINFO_EXTENSION);
+		$Content								=	ClassRegistry::Init("Content");
+
+		$data									=	$Content->find("first",array(
+														"conditions"	=>	array(
+															"Content.model_id"		=>	$model_id,
+															"Content.model"			=>	$model_name,
+															"LOWER(Content.type)"	=>	strtolower($type),
+														)
+													));
+
+		if(!empty($data))
+		$Contents["Content"]["id"]				=	$data["Content"]["id"];
+		$Contents["Content"]["model"]			=	$model_name;
+		$Contents["Content"]["model_id"]		=	$model_id;
+		$Contents["Content"]["host"]			=	$host;
+		$Contents["Content"]["mime_type"]		=	$mime_type;
+		$Contents["Content"]["cloud"]			=	"0";
+
+		$path_content	=	$this->settings['path_content'];
+			if(!is_dir($path_content))mkdir($path_content,0777);
+
+		$path_model		=	$path_content. $model_name . "/";
+			if(!is_dir($path_model)) mkdir($path_model,0777);
+
+		$path_model_id	=	$path_model . $model_id . "/";
+			if(!is_dir($path_model_id))
+				mkdir($path_model_id,0777);
+
+		//RESIZE
+		App::import('Vendor','upload' ,array('file'=>'class.upload.php'));
+		$path_content							=	$path_model_id.$model_id.'_'.$type.".".$ext;
+		@unlink($path_content);
+		
+		$img 									=	new upload($source);
+		$img->file_new_name_body   				=	$model_id.'_'.$fileArr.'_'.$type;
+		if($resizeType == 'cropResize') {
+
+			$img->image_resize          		=	true;
+			$img->image_ratio_crop      		=	true;
+			$img->image_y               		=	$height;
+			$img->image_x               		=	$width;
+
+		} else if($resizeType == 'resizeMaxWidth') {
+
+			$img->image_resize          		=	true;
+			$img->image_ratio_y        			= 	true;
+			$img->image_x               		=	$width;
+		}
+		else if($resizeType == 'cropRatio')
+		{
+			$img->image_resize          		=	true;
+			$img->image_ratio		      		=	true;
+			$img->image_y               		=	$height;
+			$img->image_x               		=	$width;
+		}
+		else if($resizeType == 'cropFill')
+		{
+			$img->image_resize          		=	true;
+			$img->image_ratio_fill	      		=	true;
+			$img->image_y               		=	$height;
+			$img->image_x               		=	$width;
+		}
+
+		$img->process($path_model_id);
+		$Contents["Content"]["type"]			=	$type;
+		$Contents["Content"]["url"]				=	"contents/{$model_name}/{$model_id}/{$model_id}_{$fileArr}_{$type}.{$ext}";
+		$Contents["Content"]["path"]			=	$path_content;
+
+		if ($img->processed)
+		{
+			$size									=	getimagesize($path_content);
+			$Contents["Content"]["width"]			=	$size[0];
+			$Contents["Content"]["height"]			=	$size[1];
+			$Content->create();
+			$Content->save($Contents);
+			return true;
+		}
+		return false;
+	}
 	
 	function UploadContent($model_id,$model_name,$type,$source)
 	{
